@@ -2,6 +2,50 @@
     width: 1000px;
     margin: 0 auto;
 }
+#foot{
+    background-color:#505050;
+}
 .footer {
     background-color: #505050;
+    padding-top: 40px;
+    overflow: hidden;
+    div {
+        float: left;
+        margin-right: 22px;
+        margin-bottom: 86px;
+    }
+    .footer_centre {
+        p {
+            margin-top: 30px;
+            font-size: 14px;
+            color: #9f9da0;
+            line-height: 20px;
+        }
+    }
+    .footer_right {
+        overflow: hidden;
+        dl {
+            float: left;
+            margin-right: 30px;
+            dt {
+                margin-bottom: 30px;
+                a {
+                    font-size: 14px;
+                    color: #ffffff;
+                }
+            }
+            dd{
+                a{
+                    color:#9f9da0;
+                    line-height: 20px;
+                }
+            }
+        }
+    }
+    p{
+        text-align: center;
+        color: #9f9da0;
+        font-size: 14px;
+        margin-bottom: 16px;
+    }
 }
