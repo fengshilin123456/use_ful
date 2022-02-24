@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bace.css">
+    <link rel="stylesheet" href="./css/public.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+</head>
+
+<body>
+    <div class="box">
+        <div class="bj">
+            <div class="bx clearfix">
+                <div class="loge"><img src="./img/img/logonew.png" alt=""></div>
+                <ul class="clearfix">
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">酷玩</a></li>
+                    <li><a href="#">导购</a></li>
+                    <li><a href="#">试用</a></li>
+                    <li><a href="#">报告</a></li>
+                </ul>
+                <div>
+                    <span class="btn"><i class="fa fa-search"></i></span>
+                    <button><a href="#">登录</a></button>
+
+                    <button><a href="#">注册</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="banner">
+            <div class="bx banner_bx">
+                <div class="right">
+                    <p>幻响小贝HiFi2.1音箱</p>
+                    <ul class="list">
+                        <li>20台</li>
+                        <li>￥599</li>
+                        <li>126人申请</li>
+                    </ul>
+                    <div class="span_"> </div>
+                    <button class="btns">立即申请</button>
+                </div>
+            </div>
+        </div>
+        <p class="bx">热门试用</p>
+        <div class="bx">
+            <div class="all"></div>
+            <div class="out">
+                <div class="l_b">
+                    <!-- 1.引入模板引擎 -->
+                    <script src="./js/template-web.js"></script>
+                    <!-- 2.准备容器 -->
+                    <div class="ul_"></div>
+                    <!-- 3.准备模板 -->
+                    <script id="frist" type="text/html">
+                        {{each value}}
+                        <div class="big">
+                            <div><img src="{{$value.img}}" alt=""></div>
+                            <h3>{{$value.text}}</h3>
+                            <div><span>{{$value.totalnum}}</span><span>{{$value.num}}台</span></div>
+                            <p><span>{{$value.apply}}</span>申请</p>
+                            <p class="sheng">剩余时间2天</p>
+                        </div>
+                        {{/each}}
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./js/index.js"></script>
+
+</html>

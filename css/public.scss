@@ -1,7 +1,187 @@
+$w1:1000px;
 .bx {
-    width: 1000px;
+    width: $w1;
     margin: 0 auto;
 }
+
 .footer {
     background-color: #505050;
+}
+
+.box {
+    width: 100%;
+    margin: 0 auto;
+    .bj {
+        $t_h: 75px;
+        height: $t_h;
+        border-bottom: 1px solid #d4ccdb;
+        .bx {
+            .loge {
+                float: left;
+                width: 135px;
+                height: 55px;
+                overflow: hidden;
+                margin-top: 10px;
+                img {
+                    width: 135px;
+                    height: 55px;
+                }
+            }
+            ul {
+                float: left;
+                margin-left: 60px;
+                width: 450px;
+                height: $t_h;
+                li {
+                    float: left;
+                    margin: 32px 24px 16px;
+                    width: 40px;
+                    height: 24px;
+                    text-align: center;
+                    line-height: 24px;
+                    a {
+                        font-size: 18px;
+                    }
+                }
+            }
+            div {
+                float: right;
+                height: $t_h;
+                width: 200px;
+                button {
+                    width: 52px;
+                    height: 32px;
+                    margin-top: 25px;
+                    margin-left: 20px;
+                    border: 1px solid red;
+                    background-color: #fff;
+                    border-radius: 5px;
+                    a {
+                        color: red;
+                        font-size: 16px;
+                    }
+                }
+                .btn {
+                    margin-top: 25px;
+                    margin-left: 20px;
+                    width: 30px;
+                    height: 30px;
+                    i {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+    .banner {
+        // background-position: ;
+        .banner_bx {
+            height: 300px;
+            background: url(../img/images/original.jpg) no-repeat -472px 0;
+            overflow: hidden;
+            .right {
+                width: 318px;
+                height: 208px;
+                margin-left: 682px;
+                margin-top: 45px;
+                p {
+                    height: 35px;
+                    font-size: 30px;
+                    text-align: right;
+                    color: #fff;
+                }
+                ul {
+                    margin-top: 20px;
+                    height: 40px;
+                    li {
+                        float: right;
+                        margin-right: 20px;
+                        font-size: 22px;
+                        color: #fff;
+                        background-color: opacity($color: #000000);
+                    }
+                }
+                div {
+                    margin-top: 20px;
+                    font-size: 18px;
+                    color: #fff;
+                    height: 25px;
+                    text-align: right;
+                }
+                button {
+                    height: 50px;
+                    width: 242px;
+                    font-size: 22px;
+                    color: #fff;
+                    margin-top: 18px;
+                    margin-left: 70px;
+                    background-color: #fe5341;
+                    border: 0px;
+                }
+            }
+        }
+    }
+    >p {
+        margin-top: 25px;
+        font-size: 22px;
+        font-weight: 700;
+    }
+    .bx {
+        .all {
+            width: 1000px;
+            position: relative;
+        }
+        .out {
+            width: 1000px;
+            overflow: scroll;
+            .l_b {
+                float: left;
+                width: 3276px;
+                height: 288px;
+                // background-color: #fe5341;
+                .big {
+                    float: left;
+                    width: 222px;
+                    height: 288px;
+                    background-color: skyblue;
+                    margin-right: 30px;
+                    >div {
+                        >img {
+                            width: 222px;
+                            height: 130px;
+                        }
+                    }
+                    >h3 {
+                        font-size: 18px;
+                        text-align: center;
+                        margin-top: 10px;
+                    }
+                    >div {
+                        >span {
+                            display: inline-block;
+                            font-size: 18px;
+                            margin: 10px 29px;
+                            width: 50px;
+                            height: 25px;
+                            text-align: center;
+                            color: #f65340;
+                            border-radius: 5px;
+                            border: 1px solid #f65340;
+                        }
+                    }
+                    >p {
+                        font-size: 14px;
+                        text-align: center;
+                        >span {
+                            color: #f65340;
+                        }
+                    }
+                    .sheng {
+                        font-size: 14px;
+                        color: #f65340;
+                    }
+                }
+            }
+        }
+    }
 }
