@@ -8,9 +8,66 @@
     <title>首页</title>
     <link rel="stylesheet" href="./css/bace.css">
     <link rel="stylesheet" href="./css/public.css">
+    <link rel="stylesheet" href="./css/index_tem.css">
 </head>
 
 <body>
+    <div id="tem_one">
+        <section class="tem_one bx">
+            <ul class="tem_one_ul">
+            </ul>
+        </section>
+        <section class="tem_two bx">
+            <ul class="tem_two_ul">
+
+            </ul>
+        </section>
+    </div>
+    <!--x 模板引擎start 1-->
+    <script src="./js/template-web.js"></script>
+    <script src="./js/index_tem.js"></script>
+    <script type="text/html" id="tem">
+
+        <!--m 这里写渲染数据 -->
+    {{each value}}
+    <li>
+        <img src={{$value.img}}>
+        <p>{{$value.text}}</p>
+        <div>
+            <span>
+                <img src="./img/images/xin.png" alt="">
+                {{$value.like}}
+            </span>
+            <span>
+                <img src="./img/images/xin.png" alt="">
+                {{$value.words}}
+            </span>
+        </div>
+    </li>
+    {{/each}}
+    </script>
+    <!--x 模板引擎end 1-->
+    <!--  -->
+    <script type="text/html" id="tem2">
+    {{each value}}
+    {{if $value.num}}
+    <li>
+        <img src={{$value.img}}>
+        <p class="po">{{$value.text}}</p>
+        <span>{{$value.totalnum}}</span>
+        <span>{{$value.num}}台</span>
+        <p class="pt">
+            <i>{{$value.apply}}</i>申请
+        </p>
+        <div>
+            {{$value.info_ty}}
+        </div>
+    </li>
+    {{/if}}
+    {{/each}}
+    </script>
+    <!--  -->
+    <!--b 底部样式 start -->
     <section id="foot">
         <section class="footer bx">
             <div class="footer_left">
@@ -133,6 +190,7 @@
             <p>© 2016 极果版权所有</p>
         </section>
     </section>
+    <!--b 底部样式 end -->
 </body>
 
 </html>
