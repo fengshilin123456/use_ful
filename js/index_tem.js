@@ -25,3 +25,20 @@ let move_two = (data) => {//m 函数名要换
     document.querySelector('.tem_two .tem_two_ul').innerHTML = html;//m每次换新要换获取的dom
 }
 myajax('http://192.168.31.110:3000/report/new', move_two);
+let circle = document.querySelector('.circle');//x获取点击按钮
+let sh = document.querySelector('.sh');//获取加载按钮
+let hi = document.querySelector('.hi');//获取等待按钮
+let tem_ = document.querySelector('.tem_one');//获取数据
+circle.addEventListener('click', function () {
+    sh.style.display = 'none';
+    hi.style.display = 'block';
+    setTimeout(function () {
+        setTimeout(function () {
+            tem_.style.display = 'block';
+        }, 1000)
+        sh.style.display = 'none';
+        hi.style.display = 'none';
+    }, 2000)
+})
+
+

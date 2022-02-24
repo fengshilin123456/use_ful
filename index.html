@@ -12,17 +12,28 @@
 </head>
 
 <body>
+    <section class="tem_two bx">
+        <ul class="tem_two_ul">
+        </ul>
+    </section>
     <div id="tem_one">
         <section class="tem_one bx">
             <ul class="tem_one_ul">
             </ul>
         </section>
-        <section class="tem_two bx">
-            <ul class="tem_two_ul">
-
-            </ul>
-        </section>
+        <div class="circle bx">
+            <div class="sh">
+                <img src="./img/images/more.png">
+                点击加载更多
+            </div>
+            <div class="hi">
+                <img src="./img/images/loading-icon.gif" alt="">
+                请稍后
+            </div>
+        </div>
     </div>
+    <script>
+    </script>
     <!--x 模板引擎start 1-->
     <script src="./js/template-web.js"></script>
     <script src="./js/index_tem.js"></script>
@@ -47,7 +58,7 @@
     {{/each}}
     </script>
     <!--x 模板引擎end 1-->
-    <!--  -->
+    <!--c 模板引擎start 2 -->
     <script type="text/html" id="tem2">
     {{each value}}
     {{if $value.num}}
@@ -66,7 +77,7 @@
     {{/if}}
     {{/each}}
     </script>
-    <!--  -->
+    <!--c 模板引擎end 2 -->
     <!--b 底部样式 start -->
     <section id="foot">
         <section class="footer bx">

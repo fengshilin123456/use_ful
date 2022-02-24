@@ -1,6 +1,6 @@
 #tem_one { background-color: #f7f7f7; }
 
-.tem_one ul { overflow: hidden; }
+.tem_one { padding-top: 40px; overflow: hidden; display: none; }
 
 .tem_one ul li { float: left; width: 222px; height: 233px; margin-right: 37px; margin-bottom: 20px; background-color: #fff; border-radius: 6px; text-align: center; position: relative; }
 
@@ -43,3 +43,7 @@
 .tem_two ul li:nth-child(8) { margin-right: 0px; }
 
 .tem_two ul li:nth-child(12) { margin-right: 0px; }
+
+.circle { margin-top: 55px; padding-bottom: 55px; text-align: center; color: #fa553f; }
+
+.circle .hi { display: none; }
