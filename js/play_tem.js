@@ -67,3 +67,15 @@ let item1 = (data) => {
 }
 myajax('http://192.168.31.110:3000/report/new', item1);
 /* 2.2 */
+/* 3.1 */
+let ip1 = (data) => {
+    let html = template('ipt1', {
+        value: data
+    })
+    document.querySelector('.ip_one').innerHTML = html;
+}
+myajax('http://192.168.31.110:3000/report/new', ip1)
+/* 3.1 */
+
+/* 3.2 */
+/* 3.2 */

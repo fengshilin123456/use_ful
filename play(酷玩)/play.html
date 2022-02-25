@@ -62,7 +62,10 @@
                 <ul class="item_two">
                 </ul>
             </div>
-            <div class="item">2</div>
+            <div class="item">
+                <ul class="ip_one"></ul>
+                <ul class="ip_two"></ul>
+            </div>
         </div>
         <!--加载更多  -->
         <div class="circle bx">
@@ -176,6 +179,31 @@
         {{/each}}
     </script>
     <!-- 2.2 -->
+    <!--m  3.1-->
+    <script type="text/html" id="ipt1">
+    {{each value}}
+        {{if $value.num}}
+            <li>
+                <img src="{{$value.img}}">
+                <p class="po">
+                    {{$value.text}}
+                </p>
+                <span>
+                    {{$value.totalnum}}
+                </span>
+                <span>
+                    {{$value.num}}台
+                </span>
+                <p class="pt">
+                    <i>
+                        {{$value.apply}}
+                    </i>申请
+                </p>
+            </li>
+        {{/if}}
+    {{/each}}
+    </script>
+    <!--m 3.1 -->
     <!-- 模板引擎 end -->
     <!-- 引入jquery -->
     <script src="../js/jquery.min.js"></script>
