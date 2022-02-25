@@ -1,7 +1,11 @@
 @charset "UTF-8";
 #tem_one { background-color: #f7f7f7; }
 
-.tem_one { padding-top: 40px; overflow: hidden; display: none; }
+.tem_one_ul { overflow: hidden; }
+
+.tem_one_ul li { margin-right: 37px; margin-bottom: 20px; float: left; width: 222px; height: 233px; border-radius: 6px; }
+
+.tem_one { padding-top: 40px; overflow: hidden; }
 
 .tem_one .bx { overflow: hidden; margin-bottom: 12px; }
 

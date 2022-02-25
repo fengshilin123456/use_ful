@@ -1,91 +1,40 @@
-#tem_one {
+#every {
     background-color: #f7f7f7;
+    padding: 20px 0 20px 0;
 }
-.tem_one_ul{
-    overflow: hidden;
-    li{
-        margin-right: 37px;
-        margin-bottom: 20px;
-        float: left;
-        width: 222px;
-        height: 233px;
-        border-radius: 6px;
+.find_one {
+    text-align: center;
+    h1 {
+        font-size: 26px;
+        color: #39372d;
+        line-height: 88px;
+        font-weight: 500;
     }
 }
-.tem_one {
-    padding-top: 40px;
-    overflow: hidden;
-    // display: none;
-    .bx {
-        overflow: hidden;
-        margin-bottom: 12px;
-        .left {
-            float: left;
-            width: 100px;
-            color: black;
-            font-weight: 900;
-        }
-        .right {
-            width: 100px;
-            float: right;
-        }
-    }
+.find_two {
     ul {
+        overflow: hidden;
         li {
             float: left;
-            width: 222px;
-            height: 233px;
-            margin-right: 37px;
-            margin-bottom: 20px;
-            background-color: #fff;
-            border-radius: 6px;
+            color: #9ca296;
+            font-size: 18px;
+            width: 166px;
+            height: 33px;
             text-align: center;
-            position: relative;
-            p {
-                margin-top: 12px;
-                margin-bottom: 24px;
-                margin-left: 12px;
-                margin-right: 12px;
-                font-size: 14px;
-                white-space: nowrap;
-                text-overflow: ellipsis;
-                overflow: hidden;
-            }
-            div {
-                position: absolute;
-                right: 12px;
-                span {
-                    display: inline-block;
-                    color: #bbbbbb;
-                    margin-left: 7px;
-                    margin-bottom: 12px;
-                    margin-right: 12px;
-                    img {
-                        width: 12px;
-                        height: 12px;
-                    }
-                }
-            }
-            img {
-                width: 222px;
-                height: 133px;
-                &:hover {
-                    animation: opc 1s infinite;
-                }
-            }
         }
-        li:nth-child(4) {
-            margin-right: 0px;
+        li:nth-child(1) {
+            margin-left: 250px;
         }
-        li:nth-child(8) {
-            margin-right: 0px;
-        }
-        li:nth-child(12) {
-            margin-right: 0px;
+        .active {
+            color: #fd5238;
+            border-bottom: 3px solid #fd5238;
         }
     }
 }
-.tem_two {
+.find_three {
+    .item {
+        display: none;
+    }
     margin-top: 20px;
 
     .bx {
@@ -148,6 +97,7 @@
             img {
                 width: 222px;
                 height: 133px;
+                border-radius: 6px;
                 &:hover {
                     animation: opc 1s infinite;
                 }
@@ -175,9 +125,9 @@
             margin-right: 0px;
         }
     }
-}
-.tem_three {
-    @extend .tem_two;
+    ul:nth-child(3) {
+        display: none;
+    }
 }
 .circle {
     margin-top: 55px;
@@ -201,3 +151,77 @@
     }
 }
 /* 动画 */
+/* 品类 生活 s*/
+.live {
+    border-radius: 6px;
+    border: 1px solid rgb(179, 174, 174);
+    overflow: hidden;
+    margin-bottom: 36px;
+    background-color: #fff;
+    .live_h {
+        margin-top: 24px;
+        padding-left: 24px;
+        border-left: 8px solid #f85443;
+        line-height: 26px;
+        font-size: 16px;
+    }
+    .se1 {
+        overflow: hidden;
+        border-bottom: 1px dashed #000;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+    .live_i {
+        float: left;
+        margin-top: 37px;
+        margin-left: 40px;
+        img {
+            width: 100px;
+            height: 100px;
+        }
+        p {
+            text-align: center;
+            margin-top: 14px;
+            font-size: 12px;
+            color: #9ca296;
+        }
+    }
+    .live_d {
+        float: left;
+        width: 100%;
+        // margin-top: 40px;
+        margin-left: 40px;
+        padding-bottom: 40px;
+        span {
+            display: inline-block;
+            margin-right: 64px;
+            line-height: 33px;
+        }
+    }
+}
+/* 品类 生活 e*/
+/* 护理 s */
+.murse {
+    @extend .live;
+}
+/* 护理 e */
+/*fitness s */
+.fitness {
+    @extend .live;
+}
+.wear {
+    @extend .live;
+}
+.trip {
+    @extend .live;
+}
+.exercise {
+    @extend .live;
+}
+.photo {
+    @extend .live;
+}
+.phone {
+    @extend .live;
+}
+/*fitness e */
