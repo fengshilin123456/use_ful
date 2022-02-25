@@ -35,8 +35,8 @@
     </div>
     <h1 class="inve bx">导购清单</h1>
     <section class="bx">
-        <div class="new_ active"><a href="./guid.html">最热</a></div>
-        <div class="hot_"><a href="./guid2.html">最新</a></div>
+        <div class="new_"><a href="./guid.html">最热</a></div>
+        <div class="hot_ active"><a href="./guid.html">最新</a></div>
     </section>
     <article>
         <!-- 1.引入模板 -->
@@ -45,13 +45,13 @@
         <div class="bx vess">
             <!-- 3.准备模板 -->
             <script type="text/html" id="frist">
-                {{each value}}
+                {{each value}} {{each value}}
                 <div>
-                    <div class="img"><img src="{{$value.img}}" alt=""></div>
-                    <p>{{$value.text}}</p>
-                    <div><span><img src="../img/images/zan.png" alt=""></span><span>{{$value.like}}</span><span><img src="../img/images/xin.png" alt=""></span><span>{{$value.words}}</span></div>
+                    <div class="img"><img src={{$value[0].img}} alt=""></div>
+                    <p>{{$value[0].text}}</p>
+                    <div><span><img src="../img/images/zan.png" alt=""></span><span>{{$value[0].like}}</span><span><img src="../img/images/xin.png" alt=""></span><span>{{$value[0].words}}</span></div>
                 </div>
-                {{/each}}
+                {{/each}} {{/each}}
             </script>
         </div>
     </article>
@@ -183,6 +183,6 @@
     </section>
     <!--b 底部样式 end -->
 </body>
-<script src="../js/guid_.js"></script>
+<script src="../js/guid2.js"></script>
 
 </html>
