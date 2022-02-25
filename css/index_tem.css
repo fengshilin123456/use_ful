@@ -1,6 +1,13 @@
+@charset "UTF-8";
 #tem_one { background-color: #f7f7f7; }
 
 .tem_one { padding-top: 40px; overflow: hidden; display: none; }
+
+.tem_one .bx { overflow: hidden; margin-bottom: 12px; }
+
+.tem_one .bx .left { float: left; width: 100px; color: black; font-weight: 900; }
+
+.tem_one .bx .right { width: 100px; float: right; }
 
 .tem_one ul li { float: left; width: 222px; height: 233px; margin-right: 37px; margin-bottom: 20px; background-color: #fff; border-radius: 6px; text-align: center; position: relative; }
 
@@ -14,36 +21,56 @@
 
 .tem_one ul li img { width: 222px; height: 133px; }
 
+.tem_one ul li img:hover { -webkit-animation: opc 1s infinite; animation: opc 1s infinite; }
+
 .tem_one ul li:nth-child(4) { margin-right: 0px; }
 
 .tem_one ul li:nth-child(8) { margin-right: 0px; }
 
 .tem_one ul li:nth-child(12) { margin-right: 0px; }
 
-.tem_two { margin-top: 20px; }
+.tem_two, .tem_three { margin-top: 20px; }
 
-.tem_two ul { overflow: hidden; }
+.tem_two .bx, .tem_three .bx { overflow: hidden; margin-bottom: 12px; }
 
-.tem_two ul li { float: left; width: 222px; height: 290px; margin-right: 37px; margin-bottom: 20px; background-color: #fff; text-align: center; border-radius: 6px; position: relative; }
+.tem_two .bx .left, .tem_three .bx .left { float: left; width: 100px; color: black; font-weight: 900; }
 
-.tem_two ul li .po { margin-top: 12px; margin-left: 14px; margin-right: 16px; font-size: 18px; color: black; margin-bottom: 8px; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
+.tem_two .bx .right, .tem_three .bx .right { width: 100px; float: right; }
 
-.tem_two ul li span { display: inline-block; border: 1px solid #fa553f; color: #fa553f; border-radius: 6px; margin-right: 16px; margin-bottom: 14px; padding-left: 14px; padding-right: 14px; padding-top: 5px; padding-bottom: 5px; }
+.tem_two ul, .tem_three ul { overflow: hidden; }
 
-.tem_two ul li .pt { font-size: 14px; font-weight: 900; }
+.tem_two ul li, .tem_three ul li { float: left; width: 222px; height: 290px; margin-right: 37px; margin-bottom: 20px; background-color: #fff; text-align: center; border-radius: 6px; position: relative; }
 
-.tem_two ul li .pt i { color: #fa553f; }
+.tem_two ul li .po, .tem_three ul li .po { margin-top: 12px; margin-left: 14px; margin-right: 16px; font-size: 18px; color: black; margin-bottom: 8px; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
 
-.tem_two ul li img { width: 222px; height: 133px; }
+.tem_two ul li span, .tem_three ul li span { display: inline-block; border: 1px solid #fa553f; color: #fa553f; border-radius: 6px; margin-right: 16px; margin-bottom: 14px; padding-left: 14px; padding-right: 14px; padding-top: 5px; padding-bottom: 5px; }
 
-.tem_two ul li div { width: 42px; height: 24px; background-color: #fa553f; border-radius: 0 6px 0 6px; color: #f7f7f7; line-height: 22px; position: absolute; top: 0; right: 0; overflow: hidden; }
+.tem_two ul li .pt, .tem_three ul li .pt { font-size: 14px; font-weight: 900; }
 
-.tem_two ul li:nth-child(4) { margin-right: 0px; }
+.tem_two ul li .pt i, .tem_three ul li .pt i { color: #fa553f; }
 
-.tem_two ul li:nth-child(8) { margin-right: 0px; }
+.tem_two ul li img, .tem_three ul li img { width: 222px; height: 133px; }
 
-.tem_two ul li:nth-child(12) { margin-right: 0px; }
+.tem_two ul li img:hover, .tem_three ul li img:hover { -webkit-animation: opc 1s infinite; animation: opc 1s infinite; }
+
+.tem_two ul li div, .tem_three ul li div { width: 42px; height: 24px; background-color: #fa553f; border-radius: 0 6px 0 6px; color: #f7f7f7; line-height: 22px; position: absolute; top: 0; right: 0; overflow: hidden; }
+
+.tem_two ul li:nth-child(4), .tem_three ul li:nth-child(4) { margin-right: 0px; }
+
+.tem_two ul li:nth-child(8), .tem_three ul li:nth-child(8) { margin-right: 0px; }
+
+.tem_two ul li:nth-child(12), .tem_three ul li:nth-child(12) { margin-right: 0px; }
 
 .circle { margin-top: 55px; padding-bottom: 55px; text-align: center; color: #fa553f; }
 
 .circle .hi { display: none; }
+
+/* 动画 */
+@-webkit-keyframes opc { 0% { opacity: 0.4; }
+  50% { opacity: 1; }
+  100% { opacity: 0.4; } }
+@keyframes opc { 0% { opacity: 0.4; }
+  50% { opacity: 1; }
+  100% { opacity: 0.4; } }
+
+/* 动画 */

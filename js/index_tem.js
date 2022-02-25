@@ -25,6 +25,14 @@ let move_two = (data) => {//m 函数名要换
     document.querySelector('.tem_two .tem_two_ul').innerHTML = html;//m每次换新要换获取的dom
 }
 myajax('http://192.168.31.110:3000/report/new', move_two);
+let move_three = (data) => {//m 函数名要换
+    let html = template('tem3', {//m每次更新要换新ID
+        value: data
+    });
+    document.querySelector('.tem_three .tem_three_ul').innerHTML = html;//m每次换新要换获取的dom
+}
+myajax('http://192.168.31.110:3000/report/new', move_three);
+
 let circle = document.querySelector('.circle');//x获取点击按钮
 let sh = document.querySelector('.sh');//获取加载按钮
 let hi = document.querySelector('.hi');//获取等待按钮

@@ -5,6 +5,20 @@
     padding-top: 40px;
     overflow: hidden;
     display: none;
+    .bx {
+        overflow: hidden;
+        margin-bottom: 12px;
+        .left {
+            float: left;
+            width: 100px;
+            color: black;
+            font-weight: 900;
+        }
+        .right {
+            width: 100px;
+            float: right;
+        }
+    }
     ul {
         li {
             float: left;
@@ -44,6 +58,9 @@
             img {
                 width: 222px;
                 height: 133px;
+                &:hover {
+                    animation: opc 1s infinite;
+                }
             }
         }
         li:nth-child(4) {
@@ -59,6 +76,21 @@
 }
 .tem_two {
     margin-top: 20px;
+
+    .bx {
+        overflow: hidden;
+        margin-bottom: 12px;
+        .left {
+            float: left;
+            width: 100px;
+            color: black;
+            font-weight: 900;
+        }
+        .right {
+            width: 100px;
+            float: right;
+        }
+    }
     ul {
         overflow: hidden;
         li {
@@ -71,6 +103,7 @@
             text-align: center;
             border-radius: 6px;
             position: relative;
+
             .po {
                 margin-top: 12px;
                 margin-left: 14px;
@@ -104,6 +137,9 @@
             img {
                 width: 222px;
                 height: 133px;
+                &:hover {
+                    animation: opc 1s infinite;
+                }
             }
             div {
                 width: 42px;
@@ -129,6 +165,9 @@
         }
     }
 }
+.tem_three {
+    @extend .tem_two;
+}
 .circle {
     margin-top: 55px;
     padding-bottom: 55px;
@@ -138,3 +177,16 @@
         display: none;
     }
 }
+/* 动画 */
+@keyframes opc {
+    0% {
+        opacity: 0.4;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.4;
+    }
+}
+/* 动画 */
