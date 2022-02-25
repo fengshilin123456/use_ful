@@ -3,6 +3,10 @@
   margin: 0 auto;
 }
 
+.active {
+  border-bottom: 2px solid red;
+}
+
 .footer {
   background-color: #505050;
 }
@@ -145,19 +149,50 @@
   position: relative;
 }
 
-.box .bx .out {
+.box .bx .all .left_ {
+  display: inline-block;
+  position: absolute;
+  top: 120px;
+  left: -50px;
+  width: 37px;
+  height: 78px;
+  background-color: rgba(0, 0, 0, 0.1);
+  animation: dire 1s infinite alternate linear;
+}
+
+.box .bx .all .right_ {
+  display: inline-block;
+  position: absolute;
+  top: 120px;
+  right: -50px;
+  width: 37px;
+  height: 78px;
+  background-color: rgba(0, 0, 0, 0.1);
+  animation: dire 1s infinite alternate linear;
+}
+
+@keyframes dire {
+  0% {
+    transform: translate(0px);
+  }
+  100% {
+    transform: translate(10px);
+  }
+}
+
+.box .bx .all .out {
   width: 1000px;
   overflow: hidden;
 }
 
-.box .bx .out .l_b {
+.box .bx .all .out .l_b {
   float: left;
   margin-top: 20px;
   width: 3000px;
   height: 288px;
 }
 
-.box .bx .out .l_b .big {
+.box .bx .all .out .l_b .big {
   float: left;
   width: 230px;
   height: 288px;
@@ -167,39 +202,47 @@
   border-radius: 5px;
 }
 
-.box .bx .out .l_b .big > div > img {
+.box .bx .all .out .l_b .big > div > img {
   width: 230px;
   height: 130px;
 }
 
-.box .bx .out .l_b .big > h3 {
+.box .bx .all .out .l_b .big > h3 {
   font-size: 18px;
   text-align: center;
   margin-top: 10px;
 }
 
-.box .bx .out .l_b .big > div > span {
+.box .bx .all .out .l_b .big > div > span {
   display: inline-block;
-  font-size: 18px;
-  margin: 10px 29px;
+  font-size: 16px;
   width: 50px;
   height: 25px;
+  margin-top: 10px;
   text-align: center;
   color: #f65340;
   border-radius: 5px;
   border: 1px solid #f65340;
 }
 
-.box .bx .out .l_b .big > p {
+.box .bx .all .out .l_b .big > div .sp_1 {
+  margin-left: 50px;
+}
+
+.box .bx .all .out .l_b .big > div .sp_2 {
+  margin-left: 20px;
+}
+
+.box .bx .all .out .l_b .big > p {
   font-size: 14px;
   text-align: center;
 }
 
-.box .bx .out .l_b .big > p > span {
+.box .bx .all .out .l_b .big > p > span {
   color: #f65340;
 }
 
-.box .bx .out .l_b .big .sheng {
+.box .bx .all .out .l_b .big .sheng {
   font-size: 14px;
   color: #f65340;
 }
