@@ -5,18 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>首页</title>
     <link rel="stylesheet" href="./css/bace.css">
     <link rel="stylesheet" href="./css/public11.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/public.css">
     <link rel="stylesheet" href="./css/index_tem.css">
 
 </head>
 
 <body>
+    
     <div class="box">
+        <!--头部 start -->
         <div class="bj">
             <div class="bx clearfix">
                 <div class="loge"><img src="./img/img/logonew.png" alt=""></div>
@@ -35,6 +38,7 @@
                 </div>
             </div>
         </div>
+        <!--头部 end -->
         <div class="banner">
             <div class="bx banner_bx">
                 <div class="right">
@@ -155,11 +159,7 @@
             </div>
         </div>
     </div>
-
     <script src="./js/index.js"></script>
-
-
-
     <section class="tem_two bx">
         <div class="bx">
             <h1 class="left">报告精选</h1>
@@ -168,7 +168,6 @@
                 <img src="./img/images/readMore.png">
             </div>
         </div>
-
         <ul class="tem_two_ul">
         </ul>
     </section>
@@ -180,7 +179,6 @@
                 <img src="./img/images/readMore.png">
             </div>
         </div>
-
         <ul class="tem_three_ul">
         </ul>
     </section>
@@ -215,21 +213,21 @@
 
         <!--m 这里写渲染数据 -->
         {{each value}}
-        <li>
-            <img src={{$value.img}}>
-            <p>{{$value.text}}</p>
-            <div>
-                <span>
+    <li>
+        <img src={{$value.img}}>
+        <p>{{$value.text}}</p>
+        <div>
+            <span>
                 <img src="./img/images/xin.png" alt="">
                 {{$value.like}}
             </span>
-                <span>
+            <span>
                 <img src="./img/images/xin.png" alt="">
                 {{$value.words}}
             </span>
-            </div>
-        </li>
-        {{/each}}
+        </div>
+    </li>
+    {{/each}}
     </script>
     <!--x 模板引擎end 1-->
     <!--c 模板引擎start 2 -->

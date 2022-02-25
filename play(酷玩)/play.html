@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>酷玩</title>
+    <link rel="stylesheet" href="../css/bace.css">
+    <link rel="stylesheet" href="../css/public.css">
+    <link rel="stylesheet" href="../css/public11.css">
+    <link rel="stylesheet" href="../css/play.css">
+</head>
+
+<body>
+    <!--头部 start -->
+    <div class="box">
+        <div class="bj">
+            <div class="bx clearfix">
+                <div class="loge"><img src="../img/img/logonew.png" alt=""></div>
+                <ul class="clearfix">
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">酷玩</a></li>
+                    <li><a href="#">导购</a></li>
+                    <li><a href="#">试用</a></li>
+                    <li><a href="#">报告</a></li>
+                </ul>
+                <div>
+                    <span class="btn"><i class="fa fa-search"></i></span>
+                    <button><a href="#">登录</a></button>
+
+                    <button><a href="#">注册</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--头部 end -->
+    <!--tab切换 start  -->
+    <section class="find">
+        <div class="find_one bx">
+            <h1>发现酷玩</h1>
+        </div>
+        <div class="find_two bx">
+            <ul>
+                <li class="active">最新</li>
+                <li>最热</li>
+                <li>品类</li>
+            </ul>
+        </div>
+        <div class="find_three bx">
+            <div class="item" style="display: block;">
+                <ul class="play_one">
+                </ul>
+                <ul class="play_two">
+                </ul>
+                <ul class="play_three">
+                </ul>
+            </div>
+            <div class="item">
+                <ul class="item_one">
+                </ul>
+                <ul class="item_two">
+                </ul>
+            </div>
+            <div class="item">2</div>
+        </div>
+        <!--加载更多  -->
+        <div class="circle bx">
+            <div class="sh">
+                <img src="../img/images/more.png"> 点击加载更多
+            </div>
+            <div class="hi">
+                <img src="../img/images/loading-icon.gif" alt=""> 请稍后
+            </div>
+        </div>
+        <!-- 加载更多 -->
+    </section>
+    <!-- 引入js -->
+    <script src="../js/template-web.js"></script>
+    <script src="../js/play_tem.js"></script>
+    <!--z 1  -->
+    <script type="text/html" id="one">
+        {{each value}} {{if $value.num}}
+        <li>
+            <img src={{$value.img}}>
+            <p class="po">{{$value.text}}</p>
+            <span>{{$value.totalnum}}</span>
+            <span>{{$value.num}}台</span>
+            <p class="pt">
+                <i>{{$value.apply}}</i>申请
+            </p>
+            <div>
+                {{$value.info_ty}}
+            </div>
+        </li>
+        {{/if}} {{/each}}
+    </script>
+    <!--z 1  -->
+    <!--z 2  -->
+    <script type="text/html" id="two">
+        {{each value}} {{if $value.num}}
+        <li>
+            <img src={{$value.img}}>
+            <p class="po">{{$value.text}}</p>
+            <span>{{$value.totalnum}}</span>
+            <span>{{$value.num}}台</span>
+            <p class="pt">
+                <i>{{$value.apply}}</i>申请
+            </p>
+            <div>
+                {{$value.info_ty}}
+            </div>
+        </li>
+        {{/if}} {{/each}}
+    </script>
+    <!--z 2 -->
+    <!--z 3  -->
+    <script type="text/html" id="three">
+        {{each value}} {{if $value.num}}
+        <li>
+            <img src={{$value.img}}>
+            <p class="po">{{$value.text}}</p>
+            <span>{{$value.totalnum}}</span>
+            <span>{{$value.num}}台</span>
+            <p class="pt">
+                <i>{{$value.apply}}</i>申请
+            </p>
+            <div>
+                {{$value.info_ty}}
+            </div>
+        </li>
+        {{/if}} {{/each}}
+    </script>
+    <!--z 3 -->
+    <!-- 2.1 -->
+    <script type="text/html" id="item1">
+        {{each value}}
+            {{if $value.num}}
+                <li>
+                    <img src="{{$value.img}}" alt="">
+                    <p class="po">{{$value.text}}</p>
+                    <span>{{$value.totalnum}}</span>
+                    <span>{{$value.num}}台</span>
+                    <p class="pt">
+                        <i>
+                            {{$value.apply}}
+                        </i>申请
+                    </p>
+                    <div>
+                        {{$value.info_ty}}
+                    </div>
+                </li>
+            {{/if}}
+        {{/each}}
+    </script>
+    <!-- 2.1 -->
+    <!-- 2.2 -->
+    <script type="text/html" id="item2">
+        {{each value}}
+            {{if $value.num}}
+                <li>
+                    <img src="{{$value.img}}" alt="">
+                    <p class="po">{{$value.text}}</p>
+                    <span>{{$value.totalnum}}</span>
+                    <span>{{$value.num}}台</span>
+                    <p class="pt">
+                        <i>
+                            {{$value.apply}}
+                        </i>申请
+                    </p>
+                    <div>
+                        {{$value.info_ty}}
+                    </div>
+                </li>
+            {{/if}}
+        {{/each}}
+    </script>
+    <!-- 2.2 -->
+    <!-- 模板引擎 end -->
+    <!-- 引入jquery -->
+    <script src="../js/jquery.min.js"></script>
+    <!-- 引入jquery -->
+    <script>
+        $('.find_two ul li').click(function () {
+            $(this).addClass('active').siblings().removeClass('active');
+            let index = $(this).index();
+            $('.find_three .item').eq(index).show().siblings().hide();
+        })
+    </script>
+    <!--tab切换 end  -->
+    <!--b 底部样式 start -->
+    <section id="foot">
+        <section class="footer bx">
+            <div class="footer_left">
+                <img src="../img/img/code.png" alt="">
+            </div>
+            <div class="footer_centre">
+                <img src="../img/img/logoImg.jpg" alt="">
+                <p>全球酷玩试用导购平台<br>酷·新奇·好玩·品质</p>
+                <p>微信添加“JguoJguo”<br>获取我们的服务。</p>
+            </div>
+            <div class="footer_right">
+                <dl>
+                    <dt><a href="#">免费试用</a></dt>
+                    <dd><a href="#">试用流程</a></dd>
+                    <dd><a href="#">如何提高成功率</a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="#">友情链接</a></dt>
+                    <dd>
+                        <span>
+                            <a href="#">智东西</a>
+                        </span>
+                        <span>
+                            <a href="#">WEIBUSI</a>
+                        </span>
+                    </dd>
+                    <dd>
+                        <span>
+                            <a href="#">搜狐IT</a>
+                        </span>
+
+                        <span>
+                            <a href="#">腾讯科技</a>
+                        </span>
+                    </dd>
+                    <dd>
+                        <span>
+                            <a href="#">搜狐数码</a>
+                        </span>
+                        <span>
+                            <a href="#">凤凰科技</a>
+                        </span>
+                    </dd>
+                    <dd>
+                        <span>
+                            <a href="#">凤凰数码 </a>
+                        </span>
+                        <span>
+                            <a href="#">PConline</a>
+                        </span>
+                    </dd>
+                    <dd>
+                        <span>
+                            <a href="#">泡泡网</a>
+                        </span>
+                        <span>
+                            <a href="#">3W咖啡</a>
+                        </span>
+                    </dd>
+                    <dd>
+                        <span>
+                            <a href="#">ZUK社区</a>
+                        </span>
+                        <span>
+                            <a href="#">亿觅emie</a>
+                        </span>
+                    </dd>
+                    <dd>
+                        <span>
+                            <a href="#">极客公园</a>
+                        </span>
+                        <span>
+                            <a href="#">易迅易启玩</a>
+                        </span>
+                    </dd>
+                    <dd>
+                        <span>
+                            <a href="#">果库</a>
+                        </span>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <a href="#">购买攻略</a>
+                    </dt>
+                    <dd>
+                        <a href="#">美亚海淘教程</a>
+                    </dd>
+                    <dd>
+                        <a href="#">日亚海淘教程</a>
+                    </dd>
+                    <dd>
+                        <a href="#">海淘转运攻略</a>
+                    </dd>
+                    <dd>
+                        <a href="#">kickstarter 众筹购买攻略</a>
+                    </dd>
+                    <dd>
+                        <a href="#">indiegogo 众筹购买攻略</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <a href="#">厂商合作</a>
+                    </dt>
+                    <dd>
+                        <a href="#">关于极果</a>
+                    </dd>
+                    <dd>
+                        <a href="#">联系我们</a>
+                    </dd>
+                    <dd>
+                        <a href="#">商务合作：BD@jiguo.com</a>
+                    </dd>
+                    <dd>
+                        <a href="#">CEO邮箱：CEO@jiguo.com</a>
+                    </dd>
+                </dl>
+            </div>
+            <p>© 2016 极果版权所有</p>
+        </section>
+    </section>
+    <!--b 底部样式 end -->
+</body>
+
+</html>

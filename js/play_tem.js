@@ -12,34 +12,31 @@ let myajax = (url, move) => { //z 封装ajax，下次直接调函数传不同接
     }
 } //v    ajax 一次就好
 let move_one = (data) => { //m 函数名要换
-    let html = template('tem', { //m每次更新要换新ID
+    let html = template('one', { //m每次更新要换新ID
         value: data
     });
-    document.querySelector('.tem_one .tem_one_ul').innerHTML = html; //m每次换新要换获取的dom
+    document.querySelector('.play_one').innerHTML = html; //m每次换新要换获取的dom
 }
-myajax('http://192.168.31.110:3000/guid/hot', move_one);//z记得更换
-//1次
+myajax('http://192.168.31.110:3000/report/new', move_one);//z记得更换
 let move_two = (data) => { //m 函数名要换
-    let html = template('tem2', { //m每次更新要换新ID
+    let html = template('two', { //m每次更新要换新ID
         value: data
     });
-    document.querySelector('.tem_two .tem_two_ul').innerHTML = html; //m每次换新要换获取的dom
+    document.querySelector('.play_two').innerHTML = html; //m每次换新要换获取的dom
 }
 myajax('http://192.168.31.110:3000/report/new', move_two);//z记得更换
-//2次
 let move_three = (data) => { //m 函数名要换
-    let html = template('tem3', { //m每次更新要换新ID
+    let html = template('three', { //m每次更新要换新ID
         value: data
     });
-    document.querySelector('.tem_three .tem_three_ul').innerHTML = html; //m每次换新要换获取的dom
+    document.querySelector('.play_three').innerHTML = html; //m每次换新要换获取的dom
 }
 myajax('http://192.168.31.110:3000/report/new', move_three);//z记得更换
-//3次
 // /* 首页加载更多 start*/
 let circle = document.querySelector('.circle'); //x获取点击按钮
 let sh = document.querySelector('.sh'); //获取加载按钮
 let hi = document.querySelector('.hi'); //获取等待按钮
-let tem_ = document.querySelector('.tem_one'); //获取数据
+let tem_ = document.querySelector('.play_three'); //获取数据
 circle.addEventListener('click', function () {
     sh.style.display = 'none';
     hi.style.display = 'block';
@@ -52,4 +49,21 @@ circle.addEventListener('click', function () {
     }, 2000)
 })
 // /* 首页加载更多 end*/
-
+/* 2.1 */
+let item = (data) => {
+    let html = template('item1', {
+        value: data
+    })
+    document.querySelector('.item_one').innerHTML = html;
+}
+myajax('http://192.168.31.110:3000/report/new', item);
+/* 2.1 */
+/* 2.2 */
+let item1 = (data) => {
+    let html = template('item2', {
+        value: data
+    })
+    document.querySelector('.item_two').innerHTML = html;
+}
+myajax('http://192.168.31.110:3000/report/new', item1);
+/* 2.2 */
