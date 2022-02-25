@@ -133,21 +133,24 @@ $w1:1000px;
         }
         .out {
             width: 1000px;
-            overflow: scroll;
+            overflow: hidden;
             .l_b {
                 float: left;
-                width: 3276px;
+                margin-top: 20px;
+                width: 3000px;
                 height: 288px;
                 // background-color: #fe5341;
                 .big {
                     float: left;
-                    width: 222px;
+                    width: 230px;
                     height: 288px;
                     background-color: skyblue;
-                    margin-right: 30px;
+                    margin-right: 10px;
+                    margin-left: 10px;
+                    border-radius: 5px;
                     >div {
                         >img {
-                            width: 222px;
+                            width: 230px;
                             height: 130px;
                         }
                     }
