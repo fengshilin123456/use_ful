@@ -19,7 +19,6 @@ let move_one = (data) => { //m 函数名要换
 }
 myajax('http://192.168.31.110:3000/guid/hot', move_one);
 let move_two = (data) => { //m 函数名要换
-    console.log(date);
     let html = template('tem2', { //m每次更新要换新ID
         value: data
     });

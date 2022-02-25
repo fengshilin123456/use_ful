@@ -20,18 +20,18 @@
         <div class="bj">
             <div class="bx clearfix">
                 <div class="loge"><img src="./img/img/logonew.png" alt=""></div>
-                <ul class="clearfix">
-                    <li><a href="#">首页</a></li>
-                    <li><a href="#">酷玩</a></li>
-                    <li><a href="#">导购</a></li>
-                    <li><a href="#">试用</a></li>
-                    <li><a href="#">报告</a></li>
+                <ul class="clearfix clo">
+                    <li class="active"><a href="javascript:">首页</a></li>
+                    <li><a href="./play(酷玩)/play.html" target="blank">酷玩</a></li>
+                    <li><a href="./help.html" target="blank">导购</a></li>
+                    <li><a href="./use(试用)/use.html" target="blank">试用</a></li>
+                    <li><a href="./report(报告）/report.html" target="blank">报告</a></li>
                 </ul>
                 <div>
-                    <span class="btn"><i class="fa fa-search"></i></span>
-                    <button><a href="#">登录</a></button>
+                    <span class="btn" target="blank"><a href="https://www.baidu.com/"><i class="fa fa-search"></i></a></span>
+                    <button><a href="./up.html" target="blank">登录</a></button>
 
-                    <button><a href="#">注册</a></button>
+                    <button><a href="./regist.html" target="blank">注册</a></button>
                 </div>
             </div>
         </div>
@@ -51,107 +51,110 @@
         </div>
         <p class="bx">热门试用</p>
         <div class="bx">
-            <div class="all"></div>
-            <div class="out">
-                <div class="l_b">
-                    <!-- 1.引入模板引擎 -->
-                    <!-- <script src="./js/template-web.js"></script> -->
-                    <!-- 2.准备容器 -->
-                    <!-- <div class="ul_"></div> -->
-                    <!-- 3.准备模板 -->
-                    <!-- <script id="frist" type="text/html"> -->
-                    <!-- {{each value}} -->
-                    <div class="big">
-                        <div><img src="./img/img/hot1.jpg" alt=""></div>
-                        <h3>巴慕达 The Toaster 烤面包机</h3>
-                        <div><span>2032</span><span>20台</span></div>
-                        <p>1392申请</p>
-                        <p class="sheng">剩余时间2天</p>
-                    </div>
-                    <div class="big">
-                        <div><img src="./img/img/hot2.jpg" alt=""></div>
-                        <h3>Osprey小鹰户外运动专业腰包</h3>
-                        <div><span>2032</span><span>20台</span></div>
-                        <p>1392申请</p>
-                        <p class="sheng">查看试用名单</p>
-                    </div>
-                    <div class="big">
-                        <div><img src="./img/img/hot3.jpg" alt=""></div>
-                        <h3>Liquid Image 338 运动摄像眼镜</h3>
-                        <div><span>2032</span><span>20台</span></div>
-                        <p>1392申请</p>
-                        <p class="sheng">剩余时间2天</p>
-                    </div>
-                    <div class="big">
-                        <div><img src="./img/img/hot4.jpg" alt=""></div>
-                        <h3>巴慕达 The Toaster 烤面包机</h3>
-                        <div><span>2032</span><span>20台</span></div>
-                        <p>1392申请</p>
-                        <p class="sheng">剩余时间2天</p>
-                    </div>
-                    <!-- {{/each}} -->
-                    <!-- </script> -->
+            <div class="all">
+                <span class="left_"><img src="./img/images/prev.png" alt=""></span>
+                <span class="right_"><img src="./img/images/next.png" alt=""></span>
+                <div class="out">
 
-                    <div class="big">
-                        <div><img src="./img/img/hot5.jpg" alt=""></div>
-                        <h3>巴慕达 The Toaster 烤面包机</h3>
-                        <div><span>2032</span><span>20台</span></div>
-                        <p>1392申请</p>
-                        <p class="sheng">剩余时间2天</p>
-                    </div>
-                    <div class="big">
-                        <div><img src="./img/img/hot6.jpg" alt=""></div>
-                        <h3>巴慕达 The Toaster 烤面包机</h3>
-                        <div><span>2032</span><span>20台</span></div>
-                        <p>1392申请</p>
-                        <p class="sheng">剩余时间2天</p>
-                    </div>
-                    <div class="big">
-                        <div><img src="./img/img/hot7.jpg" alt=""></div>
-                        <h3>巴慕达 The Toaster 烤面包机</h3>
-                        <div><span>2032</span><span>20台</span></div>
-                        <p>1392申请</p>
-                        <p class="sheng">剩余时间2天</p>
-                    </div>
-                    <div class="big">
-                        <div><img src="./img/img/hot8.jpg" alt=""></div>
-                        <h3>巴慕达 The Toaster 烤面包机</h3>
-                        <div><span>2032</span><span>20台</span></div>
-                        <p>1392申请</p>
-                        <p class="sheng">剩余时间2天</p>
-                    </div>
+                    <div class="l_b">
+                        <!-- 1.引入模板引擎 -->
+                        <!-- <script src="./js/template-web.js"></script> -->
+                        <!-- 2.准备容器 -->
+                        <!-- <div class="ul_"></div> -->
+                        <!-- 3.准备模板 -->
+                        <!-- <script id="frist" type="text/html"> -->
+                        <!-- {{each value}} -->
+                        <div class="big">
+                            <div><img src="./img/img/hot1.jpg" alt=""></div>
+                            <h3>巴慕达 The Toaster 烤面包机</h3>
+                            <div><span class="sp_1">2032</span><span class="sp_2">20台</span></div>
+                            <p>1392申请</p>
+                            <p class="sheng">剩余时间2天</p>
+                        </div>
+                        <div class="big">
+                            <div><img src="./img/img/hot2.jpg" alt=""></div>
+                            <h3>Osprey小鹰户外运动专业腰包</h3>
+                            <div><span class="sp_1">2032</span><span class="sp_2">20台</span></div>
+                            <p>1392申请</p>
+                            <p class="sheng">查看试用名单</p>
+                        </div>
+                        <div class="big">
+                            <div><img src="./img/img/hot3.jpg" alt=""></div>
+                            <h3>Liquid Image 338 运动摄像眼镜</h3>
+                            <div><span class="sp_1">2032</span><span class="sp_2">20台</span></div>
+                            <p>1392申请</p>
+                            <p class="sheng">剩余时间2天</p>
+                        </div>
+                        <div class="big">
+                            <div><img src="./img/img/hot4.jpg" alt=""></div>
+                            <h3>巴慕达 The Toaster 烤面包机</h3>
+                            <div><span class="sp_1">2032</span><span class="sp_2">20台</span></div>
+                            <p>1392申请</p>
+                            <p class="sheng">剩余时间2天</p>
+                        </div>
+                        <!-- {{/each}} -->
+                        <!-- </script> -->
+
+                        <div class="big">
+                            <div><img src="./img/img/hot5.jpg" alt=""></div>
+                            <h3>巴慕达 The Toaster 烤面包机</h3>
+                            <div><span class="sp_1">2032</span><span class="sp_2">20台</span></div>
+                            <p>1392申请</p>
+                            <p class="sheng">剩余时间2天</p>
+                        </div>
+                        <div class="big">
+                            <div><img src="./img/img/hot6.jpg" alt=""></div>
+                            <h3>巴慕达 The Toaster 烤面包机</h3>
+                            <div><span class="sp_1">2032</span><span class="sp_2">20台</span></div>
+                            <p>1392申请</p>
+                            <p class="sheng">剩余时间2天</p>
+                        </div>
+                        <div class="big">
+                            <div><img src="./img/img/hot7.jpg" alt=""></div>
+                            <h3>巴慕达 The Toaster 烤面包机</h3>
+                            <div><span class="sp_1">2032</span><span class="sp_2">20台</span></div>
+                            <p>1392申请</p>
+                            <p class="sheng">剩余时间2天</p>
+                        </div>
+                        <div class="big">
+                            <div><img src="./img/img/hot8.jpg" alt=""></div>
+                            <h3>巴慕达 The Toaster 烤面包机</h3>
+                            <div><span class="sp_1">2032</span><span class="sp_2">20台</span></div>
+                            <p>1392申请</p>
+                            <p class="sheng">剩余时间2天</p>
+                        </div>
 
 
-                    <div class="big">
-                        <div><img src="./img/img/hot9.jpg" alt=""></div>
-                        <h3>巴慕达 The Toaster 烤面包机</h3>
-                        <div><span>2032</span><span>20台</span></div>
-                        <p>1392申请</p>
-                        <p class="sheng">剩余时间2天</p>
-                    </div>
-                    <div class="big">
-                        <div><img src="./img/img/hot10.jpg" alt=""></div>
-                        <h3>巴慕达 The Toaster 烤面包机</h3>
-                        <div><span>2032</span><span>20台</span></div>
-                        <p>1392申请</p>
-                        <p class="sheng">剩余时间2天</p>
-                    </div>
-                    <div class="big">
-                        <div><img src="./img/img/hot11.jpg" alt=""></div>
-                        <h3>巴慕达 The Toaster 烤面包机</h3>
-                        <div><span>2032</span><span>20台</span></div>
-                        <p>1392申请</p>
-                        <p class="sheng">剩余时间2天</p>
-                    </div>
-                    <div class="big">
-                        <div><img src="./img/img/hot12.jpg" alt=""></div>
-                        <h3>巴慕达 The Toaster 烤面包机</h3>
-                        <div><span>2032</span><span>20台</span></div>
-                        <p>1392申请</p>
-                        <p class="sheng">剩余时间2天</p>
+                        <div class="big">
+                            <div><img src="./img/img/hot9.jpg" alt=""></div>
+                            <h3>巴慕达 The Toaster 烤面包机</h3>
+                            <div><span class="sp_1">2032</span><span class="sp_2">20台</span></div>
+                            <p>1392申请</p>
+                            <p class="sheng">剩余时间2天</p>
+                        </div>
+                        <div class="big">
+                            <div><img src="./img/img/hot10.jpg" alt=""></div>
+                            <h3>巴慕达 The Toaster 烤面包机</h3>
+                            <div><span class="sp_1">2032</span><span class="sp_2">20台</span></div>
+                            <p>1392申请</p>
+                            <p class="sheng">剩余时间2天</p>
+                        </div>
+                        <div class="big">
+                            <div><img src="./img/img/hot11.jpg" alt=""></div>
+                            <h3>巴慕达 The Toaster 烤面包机</h3>
+                            <div><span class="sp_1">2032</span><span class="sp_2">20台</span></div>
+                            <p>1392申请</p>
+                            <p class="sheng">剩余时间2天</p>
+                        </div>
+                        <div class="big">
+                            <div><img src="./img/img/hot12.jpg" alt=""></div>
+                            <h3>巴慕达 The Toaster 烤面包机</h3>
+                            <div><span class="sp_1">2032</span><span class="sp_2">20台</span></div>
+                            <p>1392申请</p>
+                            <p class="sheng">剩余时间2天</p>
+                        </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>

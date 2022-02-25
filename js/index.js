@@ -49,7 +49,7 @@ setInterval(function() {
 
 
 // 热门试用部分
-var Ajax_ = new XMLHttpRequest || new ActiveXObject("Micsoft.XMLHTTP");
+/* var Ajax_ = new XMLHttpRequest || new ActiveXObject("Micsoft.XMLHTTP");
 Ajax_.open('get', 'http://192.168.31.110:3000/report/new', true);
 Ajax_.send();
 Ajax_.onreadystatechange = function() {
@@ -67,6 +67,72 @@ function render_html(res) {
         value: res
     })
     document.querySelector('.ul_').innerHTML = html;
-}
+} */
 
 //  轮播
+var bigs = document.querySelectorAll('.big');
+var l_gs = document.querySelector('.out');
+var index = 0;
+var timer1 = null,
+    timer2 = null;
+var isrun = true;
+// l_gs.scrollLeft = bigs[0].offsetWidth;
+var left_ = document.querySelector('.left_');
+var right_ = document.querySelector('.right_');
+left_.addEventListener('click', function() {
+    console.log(isrun);
+    if (isrun) {
+        isrun = false;
+        index++;
+        move();
+        automove();
+        isrun = true;
+    }
+})
+right_.addEventListener('click', function() {
+    console.log(isrun);
+    if (isrun) {
+        isrun = false;
+        index--;
+        move();
+        automove();
+        isrun = true;
+    }
+})
+
+function automove() {
+    timer1 = setInterval(function() {
+        index++;
+        if (4 * index >= bigs.length) {
+            index = 0;
+            l_gs.scrollLeft = 0;
+        }
+        move();
+    }, 2000)
+}
+automove();
+
+function move() {
+    var begin = l_gs.scrollLeft;
+    var end = bigs[index].scrollWidth * 4.4 * index;
+    var step = 0;
+    var max_step = 20;
+    var even_step = (end - begin) / max_step;
+    timer2 = setInterval(function() {
+        step++;
+        if (step >= max_step) {
+            clearInterval(timer2);
+        }
+        begin += even_step;
+        l_gs.scrollLeft = begin;
+    }, 30)
+}
+
+document.addEventListener('visibilitychange', function() {
+    if (this.visibilityState == "hidden") {
+        clearInterval(timer1);
+        clearInterval(timer2)
+    } else if (this.visibilityState == "visible") {
+        move()
+    }
+})
