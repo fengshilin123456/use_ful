@@ -11,13 +11,13 @@ let myajax = (url, move) => { //z 封装ajax，下次直接调函数传不同接
         }
     }
 } //v    ajax 一次就好
-let move_one = (data) => { //m 函数名要换
+/* let move_one = (data) => { //m 函数名要换
     let html = template('tem', { //m每次更新要换新ID
         value: data
     });
     document.querySelector('.tem_one .tem_one_ul').innerHTML = html; //m每次换新要换获取的dom
 }
-myajax('http://192.168.31.110:3000/guid/hot', move_one);//z记得更换
+myajax('http://192.168.31.110:3000/guid/hot', move_one);//z记得更换 */
 //1次
 let move_two = (data) => { //m 函数名要换
     let html = template('tem2', { //m每次更新要换新ID
@@ -45,9 +45,9 @@ circle.addEventListener('click', function () {
     hi.style.display = 'block';
     setTimeout(function () {
         setTimeout(function () {
-            tem_.style.display = 'block';
+            ajax_();
         }, 1000)
-        sh.style.display = 'none';
+        sh.style.display = 'block';
         hi.style.display = 'none';
     }, 2000)
 })

@@ -1,3 +1,7 @@
+#every {
+    background-color: #f7f7f7;
+    padding: 20px 0 20px 0;
+}
 .find_one {
     text-align: center;
     h1 {
@@ -93,6 +97,7 @@
             img {
                 width: 222px;
                 height: 133px;
+                border-radius: 6px;
                 &:hover {
                     animation: opc 1s infinite;
                 }
@@ -146,3 +151,77 @@
     }
 }
 /* 动画 */
+/* 品类 生活 s*/
+.live {
+    border-radius: 6px;
+    border: 1px solid rgb(179, 174, 174);
+    overflow: hidden;
+    margin-bottom: 36px;
+    background-color: #fff;
+    .live_h {
+        margin-top: 24px;
+        padding-left: 24px;
+        border-left: 8px solid #f85443;
+        line-height: 26px;
+        font-size: 16px;
+    }
+    .se1 {
+        overflow: hidden;
+        border-bottom: 1px dashed #000;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+    .live_i {
+        float: left;
+        margin-top: 37px;
+        margin-left: 40px;
+        img {
+            width: 100px;
+            height: 100px;
+        }
+        p {
+            text-align: center;
+            margin-top: 14px;
+            font-size: 12px;
+            color: #9ca296;
+        }
+    }
+    .live_d {
+        float: left;
+        width: 100%;
+        // margin-top: 40px;
+        margin-left: 40px;
+        padding-bottom: 40px;
+        span {
+            display: inline-block;
+            margin-right: 64px;
+            line-height: 33px;
+        }
+    }
+}
+/* 品类 生活 e*/
+/* 护理 s */
+.murse {
+    @extend .live;
+}
+/* 护理 e */
+/*fitness s */
+.fitness {
+    @extend .live;
+}
+.wear {
+    @extend .live;
+}
+.trip {
+    @extend .live;
+}
+.exercise {
+    @extend .live;
+}
+.photo {
+    @extend .live;
+}
+.phone {
+    @extend .live;
+}
+/*fitness e */

@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    
+
     <div class="box">
         <!--头部 start -->
         <div class="bj">
@@ -31,7 +31,8 @@
                     <li><a href="./report(报告）/report.html" target="blank">报告</a></li>
                 </ul>
                 <div>
-                    <span class="btn" target="blank"><a href="https://www.baidu.com/"><i class="fa fa-search"></i></a></span>
+                    <span class="btn" target="blank"><a href="https://www.baidu.com/"><i
+                                class="fa fa-search"></i></a></span>
                     <button><a href="./up.html" target="blank">登录</a></button>
 
                     <button><a href="./regist.html" target="blank">注册</a></button>
@@ -188,13 +189,14 @@
     <div id="tem_one">
         <section class="tem_one bx">
             <div class="bx">
-                <h1 class="left">发现酷玩</h1>
+                <!-- <h1 class="left">发现酷玩</h1>
                 <div class="right">
                     查看更多
                     <img src="./img/images/readMore.png">
-                </div>
+                </div> -->
             </div>
             <ul class="tem_one_ul">
+                <!-- 在这里 -->
             </ul>
         </section>
         <div class="circle bx">
@@ -213,7 +215,7 @@
     <script src="./js/template-web.js"></script>
     <script src="./js/index_tem.js"></script>
     <script type="text/html" id="tem">
-
+<!-- 
         <!--m 这里写渲染数据 -->
         {{each value}}
     <li>
@@ -230,8 +232,26 @@
             </span>
         </div>
     </li>
-    {{/each}}
+    {{/each}} -->
     </script>
+    <!--  -->
+    <script src="./js/jquery.min.js"></script>
+    <script>
+        function ajax_() {
+            $.get('http://192.168.31.110:3000/guid/hot', function (a) {
+                for (let i = 0; i < a.length; i++) {
+                    $('.tem_one_ul').append(`
+                    <li>
+                <img src ="${$(a)[i].img}" class="imgs">
+                <p>${$(a)[i].text}</p>
+                </li>
+                `)
+                }
+            })
+        }
+        // ajax_()
+    </script>
+    <!--  -->
     <!--x 模板引擎end 1-->
     <!--c 模板引擎start 2 -->
     <script type="text/html" id="tem2">

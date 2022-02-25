@@ -1,4 +1,6 @@
 @charset "UTF-8";
+#every { background-color: #f7f7f7; padding: 20px 0 20px 0; }
+
 .find_one { text-align: center; }
 
 .find_one h1 { font-size: 26px; color: #39372d; line-height: 88px; font-weight: 500; }
@@ -33,7 +35,7 @@
 
 .find_three ul li .pt i { color: #fa553f; }
 
-.find_three ul li img { width: 222px; height: 133px; }
+.find_three ul li img { width: 222px; height: 133px; border-radius: 6px; }
 
 .find_three ul li img:hover { -webkit-animation: opc 1s infinite; animation: opc 1s infinite; }
 
@@ -60,3 +62,25 @@
   100% { opacity: 0.4; } }
 
 /* 动画 */
+/* 品类 生活 s*/
+.live, .murse, .fitness, .wear, .trip, .exercise, .photo, .phone { border-radius: 6px; border: 1px solid #b3aeae; overflow: hidden; margin-bottom: 36px; background-color: #fff; }
+
+.live .live_h, .murse .live_h, .fitness .live_h, .wear .live_h, .trip .live_h, .exercise .live_h, .photo .live_h, .phone .live_h { margin-top: 24px; padding-left: 24px; border-left: 8px solid #f85443; line-height: 26px; font-size: 16px; }
+
+.live .se1, .murse .se1, .fitness .se1, .wear .se1, .trip .se1, .exercise .se1, .photo .se1, .phone .se1 { overflow: hidden; border-bottom: 1px dashed #000; padding-bottom: 20px; margin-bottom: 20px; }
+
+.live .live_i, .murse .live_i, .fitness .live_i, .wear .live_i, .trip .live_i, .exercise .live_i, .photo .live_i, .phone .live_i { float: left; margin-top: 37px; margin-left: 40px; }
+
+.live .live_i img, .murse .live_i img, .fitness .live_i img, .wear .live_i img, .trip .live_i img, .exercise .live_i img, .photo .live_i img, .phone .live_i img { width: 100px; height: 100px; }
+
+.live .live_i p, .murse .live_i p, .fitness .live_i p, .wear .live_i p, .trip .live_i p, .exercise .live_i p, .photo .live_i p, .phone .live_i p { text-align: center; margin-top: 14px; font-size: 12px; color: #9ca296; }
+
+.live .live_d, .murse .live_d, .fitness .live_d, .wear .live_d, .trip .live_d, .exercise .live_d, .photo .live_d, .phone .live_d { float: left; width: 100%; margin-left: 40px; padding-bottom: 40px; }
+
+.live .live_d span, .murse .live_d span, .fitness .live_d span, .wear .live_d span, .trip .live_d span, .exercise .live_d span, .photo .live_d span, .phone .live_d span { display: inline-block; margin-right: 64px; line-height: 33px; }
+
+/* 品类 生活 e*/
+/* 护理 s */
+/* 护理 e */
+/*fitness s */
+/*fitness e */
