@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="./css/public11.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="./css/public.css">
+    <link rel="stylesheet" href="./css/index_tem.css">
+
 </head>
 
 <body>
@@ -152,7 +155,243 @@
             </div>
         </div>
     </div>
+
+    <script src="./js/index.js"></script>
+
+
+
+    <section class="tem_two bx">
+        <div class="bx">
+            <h1 class="left">报告精选</h1>
+            <div class="right">
+                查看更多
+                <img src="./img/images/readMore.png">
+            </div>
+        </div>
+
+        <ul class="tem_two_ul">
+        </ul>
+    </section>
+    <section class="tem_three bx">
+        <div class="bx">
+            <h1 class="left">导购精选</h1>
+            <div class="right">
+                查看更多
+                <img src="./img/images/readMore.png">
+            </div>
+        </div>
+
+        <ul class="tem_three_ul">
+        </ul>
+    </section>
+    <div id="tem_one">
+        <section class="tem_one bx">
+            <div class="bx">
+                <h1 class="left">发现酷玩</h1>
+                <div class="right">
+                    查看更多
+                    <img src="./img/images/readMore.png">
+                </div>
+            </div>
+            <ul class="tem_one_ul">
+            </ul>
+        </section>
+        <div class="circle bx">
+            <div class="sh">
+                <img src="./img/images/more.png"> 点击加载更多
+            </div>
+            <div class="hi">
+                <img src="./img/images/loading-icon.gif" alt=""> 请稍后
+            </div>
+        </div>
+    </div>
+    <script>
+    </script>
+    <!--x 模板引擎start 1-->
+    <!-- <script src="./js/template-web.js"></script> -->
+    <script src="./js/template-web.js"></script>
+    <script src="./js/index_tem.js"></script>
+    <script type="text/html" id="tem">
+
+        <!--m 这里写渲染数据 -->
+        {{each value}}
+        <li>
+            <img src={{$value.img}}>
+            <p>{{$value.text}}</p>
+            <div>
+                <span>
+                <img src="./img/images/xin.png" alt="">
+                {{$value.like}}
+            </span>
+                <span>
+                <img src="./img/images/xin.png" alt="">
+                {{$value.words}}
+            </span>
+            </div>
+        </li>
+        {{/each}}
+    </script>
+    <!--x 模板引擎end 1-->
+    <!--c 模板引擎start 2 -->
+    <script type="text/html" id="tem2">
+        {{each value}} {{if $value.num}}
+        <li>
+            <img src={{$value.img}}>
+            <p class="po">{{$value.text}}</p>
+            <span>{{$value.totalnum}}</span>
+            <span>{{$value.num}}台</span>
+            <p class="pt">
+                <i>{{$value.apply}}</i>申请
+            </p>
+            <div>
+                {{$value.info_ty}}
+            </div>
+        </li>
+        {{/if}} {{/each}}
+    </script>
+    <!--c 模板引擎end 2 -->
+    <!--c 模板引擎start 3 -->
+    <script type="text/html" id="tem3">
+        {{each value}} {{if $value.num}}
+        <li>
+            <img src={{$value.img}}>
+            <p class="po">{{$value.text}}</p>
+            <span>{{$value.totalnum}}</span>
+            <span>{{$value.num}}台</span>
+            <p class="pt">
+                <i>{{$value.apply}}</i>申请
+            </p>
+            <div>
+                {{$value.info_ty}}
+            </div>
+        </li>
+        {{/if}} {{/each}}
+    </script>
+    <!--c 模板引擎end 3 -->
+    <!--b 底部样式 start -->
+    <section id="foot">
+        <section class="footer bx">
+            <div class="footer_left">
+                <img src="./img/img/code.png" alt="">
+            </div>
+            <div class="footer_centre">
+                <img src="./img/img/logoImg.jpg" alt="">
+                <p>全球酷玩试用导购平台<br>酷·新奇·好玩·品质</p>
+                <p>微信添加“JguoJguo”<br>获取我们的服务。</p>
+            </div>
+            <div class="footer_right">
+                <dl>
+                    <dt><a href="#">免费试用</a></dt>
+                    <dd><a href="#">试用流程</a></dd>
+                    <dd><a href="#">如何提高成功率</a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="#">友情链接</a></dt>
+                    <dd>
+                        <span>
+                            <a href="#">智东西</a>
+                        </span>
+                        <span>
+                            <a href="#">WEIBUSI</a>
+                        </span>
+                    </dd>
+                    <dd>
+                        <span>
+                            <a href="#">搜狐IT</a>
+                        </span>
+
+                        <span>
+                            <a href="#">腾讯科技</a>
+                        </span>
+                    </dd>
+                    <dd>
+                        <span>
+                            <a href="#">搜狐数码</a>
+                        </span>
+                        <span>
+                            <a href="#">凤凰科技</a>
+                        </span>
+                    </dd>
+                    <dd>
+                        <span>
+                            <a href="#">凤凰数码 </a>
+                        </span>
+                        <span>
+                            <a href="#">PConline</a>
+                        </span>
+                    </dd>
+                    <dd>
+                        <span>
+                            <a href="#">泡泡网</a>
+                        </span>
+                        <span>
+                            <a href="#">3W咖啡</a>
+                        </span>
+                    </dd>
+                    <dd>
+                        <span>
+                            <a href="#">ZUK社区</a>
+                        </span>
+                        <span>
+                            <a href="#">亿觅emie</a>
+                        </span>
+                    </dd>
+                    <dd>
+                        <span>
+                            <a href="#">极客公园</a>
+                        </span>
+                        <span>
+                            <a href="#">易迅易启玩</a>
+                        </span>
+                    </dd>
+                    <dd>
+                        <span>
+                            <a href="#">果库</a>
+                        </span>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <a href="#">购买攻略</a>
+                    </dt>
+                    <dd>
+                        <a href="#">美亚海淘教程</a>
+                    </dd>
+                    <dd>
+                        <a href="#">日亚海淘教程</a>
+                    </dd>
+                    <dd>
+                        <a href="#">海淘转运攻略</a>
+                    </dd>
+                    <dd>
+                        <a href="#">kickstarter 众筹购买攻略</a>
+                    </dd>
+                    <dd>
+                        <a href="#">indiegogo 众筹购买攻略</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <a href="#">厂商合作</a>
+                    </dt>
+                    <dd>
+                        <a href="#">关于极果</a>
+                    </dd>
+                    <dd>
+                        <a href="#">联系我们</a>
+                    </dd>
+                    <dd>
+                        <a href="#">商务合作：BD@jiguo.com</a>
+                    </dd>
+                    <dd>
+                        <a href="#">CEO邮箱：CEO@jiguo.com</a>
+                    </dd>
+                </dl>
+            </div>
+            <p>© 2016 极果版权所有</p>
+        </section>
+    </section>
+    <!--b 底部样式 end -->
 </body>
-<script src="./js/index.js"></script>
 
 </html>
