@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>试用</title>
+    <link rel="stylesheet" href="../css/bace.css">
+    <link rel="stylesheet" href="../css/public.css">
+    <link rel="stylesheet" href="../css/public11.css">
+    <link rel="stylesheet" href="../css/use.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/template-web.js"></script>
+
+</head>
+
+<body>
+    <!--头部 start -->
+    <div class="box">
+        <div class="bj">
+            <div class="bx clearfix">
+                <div class="loge"><img src="../img/img/logonew.png" alt=""></div>
+                <ul class="clearfix">
+                    <li><a href="../index.html" target="black">首页</a></li>
+                    <li><a href="../play(酷玩)/play.html" target="black">酷玩</a></li>
+                    <li><a href="../guid(导航)/guid.html" target="black">导购</a></li>
+                    <li><a href="../use(试用)/use.html" target="black">试用</a></li>
+                    <li><a href="../report(报告）/report.html" target="black">报告</a></li>
+                </ul>
+                <div>
+                    <span class="btn"><i class="fa fa-search"></i></span>
+                    <button><a href="#">登录</a></button>
+
+                    <button><a href="#">注册</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--头部 end -->
+    <!-- 顶部切换盒子 s -->
+    <section class="head">
+        <div class="head_one bx">
+            <h1>免费试用</h1>
+        </div>
+        <!--  -->
+        <div class="head_tab_top bx">
+            <ul>
+                <li class="active">大众试用</li>
+                <li>体验师专享</li>
+            </ul>
+        </div>
+        <!--  -->
+        <section id="bgc">
+            <div class="head_tab_bottom bx">
+                <!-- 大众试用 s-->
+                <div class="item" style="display: block;">
+                    <div class="solo">
+                        <ul>
+                            <li class="act">全部</li>
+                            <li>申请中</li>
+                            <li>试用中</li>
+                            <li>已结束</li>
+                        </ul>
+                    </div>
+                    <div class="solo_r">
+                        <div class="it  bx" style="display: block;">
+                            <ul class="ui1 bx"></ul>
+                            <ul class="ui1_ bx"></ul>
+                        </div>
+                        <div class="it">
+                            <ul class="ui2"></ul>
+                        </div>
+                        <div class="it">
+                            <ul class="ui3"></ul>
+                        </div>
+                        <div class="it">
+                            <ul class="ui4"></ul>
+                        </div>
+                    </div>
+                </div>
+                <script type="text/html" id="i1">
+                {{each value}}
+                <li>
+                    <img src="{{$value.img}}" alt="">
+                    {{if $value.info_ty}}
+                    <div class="info">
+                        {{$value.info_ty}}
+                    </div>
+                    {{/if}}
+                    <p class="p1">
+                        {{$value.text}}
+                    </p>
+                    <div class="sp">
+                        <span class="sp1">
+                            {{$value.totalnum}}
+                        </span>
+                        <span class="sp2">
+                            {{$value.num}}
+                        </span>
+                    </div>
+                    <div class="app">
+                        <span class="p2">
+                        {{$value.apply}}
+                    </span>
+                    <span class="s3">
+                        申请
+                    </span>
+                    </div>
+                    {{if $value.report}}
+                    <p class="pp">
+                        报告数量 : {{$value.report}}
+                    </p>
+                    
+                    {{else}}
+                    <p class="pp_">
+                        查看试用名单
+                    </p>
+                    {{/if}}
+                </li>
+                {{/each}}
+                </script>
+                <!-- i2 是i1的复制，点击加载更多执行i2 -->
+                <script type="text/html" id="i2">
+                {{each value}}
+                <li>
+                    <img src="{{$value.img}}" alt="">
+                    {{if $value.info_ty}}
+                    <div class="info">
+                        {{$value.info_ty}}
+                    </div>
+                    {{/if}}
+                    <p class="p1">
+                        {{$value.text}}
+                    </p>
+                    <div class="sp">
+                        <span class="sp1">
+                            {{$value.totalnum}}
+                        </span>
+                        <span class="sp2">
+                            {{$value.num}}
+                        </span>
+                    </div>
+                    <div class="app">
+                        <span class="p2">
+                        {{$value.apply}}
+                    </span>
+                    <span class="s3">
+                        申请
+                    </span>
+                    </div>
+                    {{if $value.report}}
+                    <p class="pp">
+                        报告数量 : {{$value.report}}
+                    </p>
+                    
+                    {{else}}
+                    <p class="pp_">
+                        查看试用名单
+                    </p>
+                    {{/if}}
+                </li>
+                {{/each}}
+                </script>
+                <!-- 大众试用 e-->
+                <!-- 大众申请 s -->
+                <script type="text/html" id="i3">
+                    {{each value}}
+                    <li>
+                        <img src="{{$value.img}}" alt="">
+                        {{if $value.info_ty}}
+                        <div class="info">
+                            {{$value.info_ty}}
+                        </div>
+                        {{/if}}
+                        <p class="p1">
+                            {{$value.text}}
+                        </p>
+                        <div class="sp">
+                            <span class="sp1">
+                                {{$value.totalnum}}
+                            </span>
+                            <span class="sp2">
+                                {{$value.num}}
+                            </span>
+                        </div>
+                        <div class="app">
+                            <span class="p2">
+                            {{$value.apply}}
+                        </span>
+                        <span class="s3">
+                            申请
+                        </span>
+                        </div>
+                        {{if $value.report}}
+                        <p class="pp">
+                            报告数量 : {{$value.report}}
+                        </p>
+                        
+                        {{else}}
+                        <p class="pp_">
+                            查看试用名单
+                        </p>
+                        {{/if}}
+                    </li>
+                    {{/each}}
+                    </script>
+                <!--大众申请 e  -->
+                <!-- 使用中 s -->
+                <script type="text/html" id="i4">
+                    {{each value}}
+                    <li>
+                        <img src="{{$value.img}}" alt="">
+                        {{if $value.info_ty}}
+                        <div class="info">
+                            {{$value.info_ty}}
+                        </div>
+                        {{/if}}
+                        <p class="p1">
+                            {{$value.text}}
+                        </p>
+                        <div class="sp">
+                            <span class="sp1">
+                                {{$value.totalnum}}
+                            </span>
+                            <span class="sp2">
+                                {{$value.num}}
+                            </span>
+                        </div>
+                        <div class="app">
+                            <span class="p2">
+                            {{$value.apply}}
+                        </span>
+                        <span class="s3">
+                            申请
+                        </span>
+                        </div>
+                        {{if $value.report}}
+                        <p class="pp">
+                            报告数量 : {{$value.report}}
+                        </p>
+                        
+                        {{else}}
+                        <p class="pp_">
+                            查看试用名单
+                        </p>
+                        {{/if}}
+                    </li>
+                    {{/each}}
+                    </script>
+                <!-- 使用中 e-->
+                <!--结束 s  -->
+                <script type="text/html" id="i5">
+                    {{each value}}
+                    <li>
+                        <img src="{{$value.img}}" alt="">
+                        {{if $value.info_ty}}
+                        <div class="info">
+                            {{$value.info_ty}}
+                        </div>
+                        {{/if}}
+                        <p class="p1">
+                            {{$value.text}}
+                        </p>
+                        <div class="sp">
+                            <span class="sp1">
+                                {{$value.totalnum}}
+                            </span>
+                            <span class="sp2">
+                                {{$value.num}}
+                            </span>
+                        </div>
+                        <div class="app">
+                            <span class="p2">
+                            {{$value.apply}}
+                        </span>
+                        <span class="s3">
+                            申请
+                        </span>
+                        </div>
+                        {{if $value.report}}
+                        <p class="pp">
+                            报告数量 : {{$value.report}}
+                        </p>
+                        
+                        {{else}}
+                        <p class="pp_">
+                            查看试用名单
+                        </p>
+                        {{/if}}
+                    </li>
+                    {{/each}}
+                    </script>
+                <!-- 结束 e -->
+                <!-- 体验师专享 s-->
+                <div class="item">
+                    <div class="so_l">
+                        <ul>
+                            <li class="ac">全部</li>
+                            <li>申请中</li>
+                            <li>试用中</li>
+                            <li>已结束</li>
+                        </ul>
+                    </div>
+                    <div class="solo_l">
+                        <div class="ite" style="display: block;">
+                            <ul class="u1"></ul>
+                        </div>
+                        <div class="ite">
+                            <ul class="u2"></ul>
+                        </div>
+                        <div class="ite">
+                            <ul class="u3"></ul>
+                        </div>
+                        <div class="ite">
+                            <ul class="u4"></ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- 全部 -->
+                <script type="text/html" id="i6">
+                    {{each value}}
+                    <li>
+                        <img src="{{$value.img}}" alt="">
+                        {{if $value.info_ty}}
+                        <div class="info">
+                            {{$value.info_ty}}
+                        </div>
+                        {{/if}}
+                        <p class="p1">
+                            {{$value.text}}
+                        </p>
+                        <div class="sp">
+                            <span class="sp1">
+                                {{$value.totalnum}}
+                            </span>
+                            <span class="sp2">
+                                {{$value.num}}
+                            </span>
+                        </div>
+                        <div class="app">
+                            <span class="p2">
+                            {{$value.apply}}
+                        </span>
+                        <span class="s3">
+                            申请
+                        </span>
+                        </div>
+                        {{if $value.report}}
+                        <p class="pp">
+                            报告数量 : {{$value.report}}
+                        </p>
+                        
+                        {{else}}
+                        <p class="pp_">
+                            查看试用名单
+                        </p>
+                        {{/if}}
+                    </li>
+                    {{/each}}
+                    </script>
+                <!-- 全部 -->
+                <!-- 申请 s-->
+                <script type="text/html" id="i7">
+                    {{each value}}
+                    <li>
+                        <img src="{{$value.img}}" alt="">
+                        {{if $value.info_ty}}
+                        <div class="info">
+                            {{$value.info_ty}}
+                        </div>
+                        {{/if}}
+                        <p class="p1">
+                            {{$value.text}}
+                        </p>
+                        <div class="sp">
+                            <span class="sp1">
+                                {{$value.totalnum}}
+                            </span>
+                            <span class="sp2">
+                                {{$value.num}}
+                            </span>
+                        </div>
+                        <div class="app">
+                            <span class="p2">
+                            {{$value.apply}}
+                        </span>
+                        <span class="s3">
+                            申请
+                        </span>
+                        </div>
+                        {{if $value.report}}
+                        <p class="pp">
+                            报告数量 : {{$value.report}}
+                        </p>
+                        
+                        {{else}}
+                        <p class="pp_">
+                            查看试用名单
+                        </p>
+                        {{/if}}
+                    </li>
+                    {{/each}}
+                    </script>
+                <!--申请  e-->
+                <!-- 试用 -->
+                <script type="text/html" id="i8">
+                    {{each value}}
+                    <li>
+                        <img src="{{$value.img}}" alt="">
+                        {{if $value.info_ty}}
+                        <div class="info">
+                            {{$value.info_ty}}
+                        </div>
+                        {{/if}}
+                        <p class="p1">
+                            {{$value.text}}
+                        </p>
+                        <div class="sp">
+                            <span class="sp1">
+                                {{$value.totalnum}}
+                            </span>
+                            <span class="sp2">
+                                {{$value.num}}
+                            </span>
+                        </div>
+                        <div class="app">
+                            <span class="p2">
+                            {{$value.apply}}
+                        </span>
+                        <span class="s3">
+                            申请
+                        </span>
+                        </div>
+                        {{if $value.report}}
+                        <p class="pp">
+                            报告数量 : {{$value.report}}
+                        </p>
+                        
+                        {{else}}
+                        <p class="pp_">
+                            查看试用名单
+                        </p>
+                        {{/if}}
+                    </li>
+                    {{/each}}
+                    </script>
+                <!--  试用-->
+                <!-- over -->
+                <script type="text/html" id="i9">
+                    {{each value}}
+                    <li>
+                        <img src="{{$value.img}}" alt="">
+                        {{if $value.info_ty}}
+                        <div class="info">
+                            {{$value.info_ty}}
+                        </div>
+                        {{/if}}
+                        <p class="p1">
+                            {{$value.text}}
+                        </p>
+                        <div class="sp">
+                            <span class="sp1">
+                                {{$value.totalnum}}
+                            </span>
+                            <span class="sp2">
+                                {{$value.num}}
+                            </span>
+                        </div>
+                        <div class="app">
+                            <span class="p2">
+                            {{$value.apply}}
+                        </span>
+                        <span class="s3">
+                            申请
+                        </span>
+                        </div>
+                        {{if $value.report}}
+                        <p class="pp">
+                            报告数量 : {{$value.report}}
+                        </p>
+                        
+                        {{else}}
+                        <p class="pp_">
+                            查看试用名单
+                        </p>
+                        {{/if}}
+                    </li>
+                    {{/each}}
+                    </script>
+                <!-- over -->
+                <!-- 体验师专享 e-->
+            </div>
+            <footer class="foo bx">
+                <div class="hide_">
+                    <img src="../img/images/more.png" alt="">
+                    请点击加载更多
+                </div>
+                <div class="show_">
+                    <img src="../img/images/loading-icon.gif" alt="">
+                    请稍侯
+                </div>
+            </footer>
+        </section>
+    </section>
+    <!-- jquery s -->
+    <script>
+        //第一层
+        $('.head_tab_top ul li').click(function () {//给所有小li绑定点击事件
+            $(this).addClass('active').siblings().removeClass('active');//点谁给谁加类名
+            let index = $(this).index();//拿到自个当前下标
+            $('.head_tab_bottom .item').eq(index).show().siblings().hide();//以下标为引，让下边盒子对应的div隐藏or显示
+        })
+        //第二层
+        $('.solo ul li').click(function () {
+            $(this).addClass('act').siblings().removeClass('act');
+            let index = $(this).index();
+            $('.solo_r .it').eq(index).show().siblings().hide();
+        })
+        //再一层
+        $('.so_l ul li').click(function () {
+            $(this).addClass('ac').siblings().removeClass('ac');
+            let index = $(this).index();
+            $('.solo_l .ite').eq(index).show().siblings().hide();
+        })
+    </script>
+    <!-- jquery e -->
+    <!-- xuanr 试用加载更多-->
+    <script>
+        $('.hide_').click(function () {
+            $(this).hide();
+            $('.show_').show();
+            setTimeout(function () {
+                setTimeout(function () {
+                    $('.hide_').show();
+                    $('.show_').hide();
+                    myajax('http://192.168.31.110:3000/useing/public', c2)
+                }, 1000)
+            }, 1000)
+
+        })
+    </script>
+    <!-- xuanr 试用加载更多-->
+    <!-- 顶部切换盒子 e -->
+    <!--b 底部样式 start -->
+    <section id="foot">
+        <section class="footer bx">
+            <div class="footer_left">
+                <img src="../img/img/code.png" alt="">
+            </div>
+            <div class="footer_centre">
+                <img src="../img/img/logoImg.jpg" alt="">
+                <p>全球酷玩试用导购平台<br>酷·新奇·好玩·品质</p>
+                <p>微信添加“JguoJguo”<br>获取我们的服务。</p>
+            </div>
+            <div class="footer_right">
+                <dl>
+                    <dt><a href="#">免费试用</a></dt>
+                    <dd><a href="#">试用流程</a></dd>
+                    <dd><a href="#">如何提高成功率</a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="#">友情链接</a></dt>
+                    <dd>
+                        <span>
+                            <a href="#">智东西</a>
+                        </span>
+                        <span>
+                            <a href="#">WEIBUSI</a>
+                        </span>
+                    </dd>
+                    <dd>
+                        <span>
+                            <a href="#">搜狐IT</a>
+                        </span>
+
+                        <span>
+                            <a href="#">腾讯科技</a>
+                        </span>
+                    </dd>
+                    <dd>
+                        <span>
+                            <a href="#">搜狐数码</a>
+                        </span>
+                        <span>
+                            <a href="#">凤凰科技</a>
+                        </span>
+                    </dd>
+                    <dd>
+                        <span>
+                            <a href="#">凤凰数码 </a>
+                        </span>
+                        <span>
+                            <a href="#">PConline</a>
+                        </span>
+                    </dd>
+                    <dd>
+                        <span>
+                            <a href="#">泡泡网</a>
+                        </span>
+                        <span>
+                            <a href="#">3W咖啡</a>
+                        </span>
+                    </dd>
+                    <dd>
+                        <span>
+                            <a href="#">ZUK社区</a>
+                        </span>
+                        <span>
+                            <a href="#">亿觅emie</a>
+                        </span>
+                    </dd>
+                    <dd>
+                        <span>
+                            <a href="#">极客公园</a>
+                        </span>
+                        <span>
+                            <a href="#">易迅易启玩</a>
+                        </span>
+                    </dd>
+                    <dd>
+                        <span>
+                            <a href="#">果库</a>
+                        </span>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <a href="#">购买攻略</a>
+                    </dt>
+                    <dd>
+                        <a href="#">美亚海淘教程</a>
+                    </dd>
+                    <dd>
+                        <a href="#">日亚海淘教程</a>
+                    </dd>
+                    <dd>
+                        <a href="#">海淘转运攻略</a>
+                    </dd>
+                    <dd>
+                        <a href="#">kickstarter 众筹购买攻略</a>
+                    </dd>
+                    <dd>
+                        <a href="#">indiegogo 众筹购买攻略</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <a href="#">厂商合作</a>
+                    </dt>
+                    <dd>
+                        <a href="#">关于极果</a>
+                    </dd>
+                    <dd>
+                        <a href="#">联系我们</a>
+                    </dd>
+                    <dd>
+                        <a href="#">商务合作：BD@jiguo.com</a>
+                    </dd>
+                    <dd>
+                        <a href="#">CEO邮箱：CEO@jiguo.com</a>
+                    </dd>
+                </dl>
+            </div>
+            <p>© 2016 极果版权所有</p>
+        </section>
+    </section>
+    <!--b 底部样式 end -->
+</body>
+<script src="../js/use_tem.js"></script>
+
+</html>

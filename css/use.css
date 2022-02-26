@@ -1,0 +1,85 @@
+@charset "UTF-8";
+.head_one { text-align: center; font-size: 24px; color: #000; }
+
+.head_one h1 { line-height: 85px; font-weight: 500; }
+
+.head_tab_top { border-bottom: 1px solid #f5f5f5; }
+
+.head_tab_top ul { overflow: hidden; }
+
+.head_tab_top ul li { float: left; color: #9ca296; font-size: 18px; width: 166px; height: 33px; text-align: center; }
+
+.head_tab_top ul li:nth-child(1) { margin-left: 333px; }
+
+.head_tab_top ul .active { color: #fd5238; border-bottom: 3px solid #fd5238; }
+
+#bgc { background-color: #f7f7f7; }
+
+/* 以上无事 */
+.head_tab_bottom .item { display: none; }
+
+/* 以上第一个tab切换隐藏 */
+/* 大众试用 start */
+.solo ul { overflow: hidden; }
+
+.solo ul li { float: left; font-size: 16px; line-height: 52px; margin-right: 120px; color: #9ca296; }
+
+.solo ul li:nth-child(1) { margin-left: 234px; }
+
+.solo ul .act { color: #000; }
+
+.solo_r { background-color: #f7f7f7; }
+
+.solo_r .it { display: none; }
+
+/* 全部 s */
+.ui1, .ui1_, .ui2, .ui3, .ui4, .u1, .u2, .u3, .u4 { overflow: hidden; width: 1000px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+
+.ui1 li, .ui1_ li, .ui2 li, .ui3 li, .ui4 li, .u1 li, .u2 li, .u3 li, .u4 li { float: left; width: 224px; height: 292px; border-radius: 6px; -webkit-box-shadow: 1px 1px 1px 1px #f7f7f7; box-shadow: 1px 1px 1px 1px #f7f7f7; background-color: #fff; margin-bottom: 35px; position: relative; text-align: center; }
+
+.ui1 li img, .ui1_ li img, .ui2 li img, .ui3 li img, .ui4 li img, .u1 li img, .u2 li img, .u3 li img, .u4 li img { width: 224px; height: 135px; border-radius: 6px; }
+
+.ui1 li .info, .ui1_ li .info, .ui2 li .info, .ui3 li .info, .ui4 li .info, .u1 li .info, .u2 li .info, .u3 li .info, .u4 li .info { overflow: hidden; line-height: 24px; width: 42px; height: 24px; background-color: #ff5543; border-radius: 0 6px 0 6px; position: absolute; top: 0; right: 0; text-align: center; color: #fff; }
+
+.ui1 li .p1, .ui1_ li .p1, .ui2 li .p1, .ui3 li .p1, .ui4 li .p1, .u1 li .p1, .u2 li .p1, .u3 li .p1, .u4 li .p1 { color: #000; font-size: 18px; line-height: 27px; margin: 12px 13px 0 13px; text-align: center; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+.ui1 li .app, .ui1_ li .app, .ui2 li .app, .ui3 li .app, .ui4 li .app, .u1 li .app, .u2 li .app, .u3 li .app, .u4 li .app { overflow: hidden; margin-top: 16px; }
+
+.ui1 li .app .p2, .ui1_ li .app .p2, .ui2 li .app .p2, .ui3 li .app .p2, .ui4 li .app .p2, .u1 li .app .p2, .u2 li .app .p2, .u3 li .app .p2, .u4 li .app .p2 { color: #ff5444; width: 50px; }
+
+.ui1 li .app .p2 .s3, .ui1_ li .app .p2 .s3, .ui2 li .app .p2 .s3, .ui3 li .app .p2 .s3, .ui4 li .app .p2 .s3, .u1 li .app .p2 .s3, .u2 li .app .p2 .s3, .u3 li .app .p2 .s3, .u4 li .app .p2 .s3 { float: left; }
+
+.ui1 li .pp, .ui1_ li .pp, .ui2 li .pp, .ui3 li .pp, .ui4 li .pp, .u1 li .pp, .u2 li .pp, .u3 li .pp, .u4 li .pp, .ui1 li .pp_, .ui1_ li .pp_, .ui2 li .pp_, .ui3 li .pp_, .ui4 li .pp_, .u1 li .pp_, .u2 li .pp_, .u3 li .pp_, .u4 li .pp_ { margin-top: 10px; color: #d0d1d3; }
+
+.ui1 li .pp_, .ui1_ li .pp_, .ui2 li .pp_, .ui3 li .pp_, .ui4 li .pp_, .u1 li .pp_, .u2 li .pp_, .u3 li .pp_, .u4 li .pp_ { color: #98cb54; }
+
+.ui1 li .sp, .ui1_ li .sp, .ui2 li .sp, .ui3 li .sp, .ui4 li .sp, .u1 li .sp, .u2 li .sp, .u3 li .sp, .u4 li .sp { text-align: center; }
+
+.ui1 li .sp span, .ui1_ li .sp span, .ui2 li .sp span, .ui3 li .sp span, .ui4 li .sp span, .u1 li .sp span, .u2 li .sp span, .u3 li .sp span, .u4 li .sp span { display: inline-block; width: 48px; height: 24px; border: 1px solid #9ca296; border-radius: 6px; margin: 6px; line-height: 22px; }
+
+.ui1 li .sp .p2, .ui1_ li .sp .p2, .ui2 li .sp .p2, .ui3 li .sp .p2, .ui4 li .sp .p2, .u1 li .sp .p2, .u2 li .sp .p2, .u3 li .sp .p2, .u4 li .sp .p2 { font-size: 12px; }
+
+/* foo */
+.foo { text-align: center; }
+
+.foo .show_ { display: none; }
+
+/* foo */
+/* 全部 e */
+/* 申请中 start*/
+/* 申请中 end*/
+/* 大众试用 end */
+/* 体验师 start */
+.so_l ul { overflow: hidden; }
+
+.so_l ul li { float: left; font-size: 16px; line-height: 52px; margin-right: 120px; color: #9ca296; }
+
+.so_l ul li:nth-child(1) { margin-left: 234px; }
+
+.so_l ul .ac { color: #000; }
+
+.solo_l { background-color: #f7f7f7; }
+
+.solo_l .ite { display: none; }
+
+/* 体验师 end */
