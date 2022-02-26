@@ -219,11 +219,13 @@
                 个人护理
             </div>
             <section class="se1">
-                {{each value}} {{if $value[1].icon}}
+                {{each value}} 
+                {{if $value[1].icon}}
                 <div class="live_i">
                     <img src="{{$value[1].icon}}" alt="">
                 </div>
-                {{/if}} {{/each}}
+                {{/if}}
+                {{/each}}
             </section>
             <div class="live_d">
                 {{each value}}
