@@ -39,6 +39,8 @@
 
 .ui1 li img, .ui1_ li img, .ui2 li img, .ui3 li img, .ui4 li img, .u1 li img, .u2 li img, .u3 li img, .u4 li img { width: 224px; height: 135px; border-radius: 6px; }
 
+.ui1 li img:hover, .ui1_ li img:hover, .ui2 li img:hover, .ui3 li img:hover, .ui4 li img:hover, .u1 li img:hover, .u2 li img:hover, .u3 li img:hover, .u4 li img:hover { -webkit-animation: opc 1s infinite; animation: opc 1s infinite; }
+
 .ui1 li .info, .ui1_ li .info, .ui2 li .info, .ui3 li .info, .ui4 li .info, .u1 li .info, .u2 li .info, .u3 li .info, .u4 li .info { overflow: hidden; line-height: 24px; width: 42px; height: 24px; background-color: #ff5543; border-radius: 0 6px 0 6px; position: absolute; top: 0; right: 0; text-align: center; color: #fff; }
 
 .ui1 li .p1, .ui1_ li .p1, .ui2 li .p1, .ui3 li .p1, .ui4 li .p1, .u1 li .p1, .u2 li .p1, .u3 li .p1, .u4 li .p1 { color: #000; font-size: 18px; line-height: 27px; margin: 12px 13px 0 13px; text-align: center; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
@@ -59,6 +61,21 @@
 
 .ui1 li .sp .p2, .ui1_ li .sp .p2, .ui2 li .sp .p2, .ui3 li .sp .p2, .ui4 li .sp .p2, .u1 li .sp .p2, .u2 li .sp .p2, .u3 li .sp .p2, .u4 li .sp .p2 { font-size: 12px; }
 
+/* 动画 */
+@-webkit-keyframes opc { 0% { opacity: 0; }
+  20% { opacity: 0.2; }
+  40% { opacity: 0.4; }
+  60% { opacity: 1; }
+  80% { opacity: 0.4; }
+  100% { opacity: 0.2; } }
+@keyframes opc { 0% { opacity: 0; }
+  20% { opacity: 0.2; }
+  40% { opacity: 0.4; }
+  60% { opacity: 1; }
+  80% { opacity: 0.4; }
+  100% { opacity: 0.2; } }
+
+/* 动画 */
 /* foo */
 .foo { text-align: center; }
 

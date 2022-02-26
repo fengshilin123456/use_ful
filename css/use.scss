@@ -85,6 +85,9 @@
             width: 224px;
             height: 135px;
             border-radius: 6px;
+            &:hover {
+                animation: opc 1s infinite;
+            }
         }
         .info {
             overflow: hidden;
@@ -145,6 +148,28 @@
         }
     }
 }
+/* 动画 */
+@keyframes opc {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0.2;
+    }
+    40% {
+        opacity: 0.4;
+    }
+    60% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 0.4;
+    }
+    100% {
+        opacity:0.2;
+    }
+}
+/* 动画 */
 .ui1_ {
     @extend .ui1;
 }
