@@ -10,12 +10,36 @@
     <link rel="stylesheet" href="../css/public.css">
     <link rel="stylesheet" href="../css/public11.css">
     <link rel="stylesheet" href="../css/use.css">
+    <link rel="stylesheet" href="../css/up.css">
     <script src="../js/jquery.min.js"></script>
     <script src="../js/template-web.js"></script>
 
 </head>
 
 <body>
+    <div class="up">
+        <div class="j_left">
+            <p>极果账号登录</p>
+            <input type="text" placeholder="手机号">
+            <input type="password" placeholder="密码">
+            <div class="d_up">
+                <input type="checkbox" />下次自动登录
+                <button>登录</button>
+            </div>
+            <div class="forget">
+                <p>注册新账号</p>
+                <p class="for_p">忘记密码？</p>
+            </div>
+        </div>
+        <div class="j_right">
+            <p>社交网络账号登录</p>
+            <div class="j_img"><img src="./img/img/code.png" alt=""></div>
+            <div>
+                <p>微博</p>
+                <p class="j_q">QQ</p>
+            </div>
+        </div>
+    </div>
     <!--头部 start -->
     <div class="box">
         <div class="bj">
@@ -30,9 +54,9 @@
                 </ul>
                 <div>
                     <span class="btn"><i class="fa fa-search"></i></span>
-                    <button><a href="#">登录</a></button>
+                    <button class="git_up"><a>登录</a></button>
 
-                    <button><a href="#">注册</a></button>
+                    <button><a href="../regist.html">注册</a></button>
                 </div>
             </div>
         </div>
@@ -80,95 +104,92 @@
                     </div>
                 </div>
                 <script type="text/html" id="i1">
-                {{each value}}
-                <li>
-                    <img src="{{$value.img}}" alt="">
-                    {{if $value.info_ty}}
-                    <div class="info">
-                        {{$value.info_ty}}
-                    </div>
-                    {{/if}}
-                    <p class="p1">
-                        {{$value.text}}
-                    </p>
-                    <div class="sp">
-                        <span class="sp1">
+                    {{each value}}
+                    <li>
+                        <img src="{{$value.img}}" alt=""> {{if $value.info_ty}}
+                        <div class="info">
+                            {{$value.info_ty}}
+                        </div>
+                        {{/if}}
+                        <p class="p1">
+                            {{$value.text}}
+                        </p>
+                        <div class="sp">
+                            <span class="sp1">
                             {{$value.totalnum}}
                         </span>
-                        <span class="sp2">
+                            <span class="sp2">
                             {{$value.num}}
                         </span>
-                    </div>
-                    <div class="app">
-                        <span class="p2">
+                        </div>
+                        <div class="app">
+                            <span class="p2">
                         {{$value.apply}}
                     </span>
-                    <span class="s3">
+                            <span class="s3">
                         申请
                     </span>
-                    </div>
-                    {{if $value.report}}
-                    <p class="pp">
-                        报告数量 : {{$value.report}}
-                    </p>
-                    
-                    {{else}}
-                    <p class="pp_">
-                        查看试用名单
-                    </p>
-                    {{/if}}
-                </li>
-                {{/each}}
+                        </div>
+                        {{if $value.report}}
+                        <p class="pp">
+                            报告数量 : {{$value.report}}
+                        </p>
+
+                        {{else}}
+                        <p class="pp_">
+                            查看试用名单
+                        </p>
+                        {{/if}}
+                    </li>
+                    {{/each}}
                 </script>
                 <!-- i2 是i1的复制，点击加载更多执行i2 -->
                 <script type="text/html" id="i2">
-                {{each value}}
-                <li>
-                    <img src="{{$value.img}}" alt="">
-                    {{if $value.info_ty}}
-                    <div class="info">
-                        {{$value.info_ty}}
-                    </div>
-                    {{/if}}
-                    <p class="p1">
-                        {{$value.text}}
-                    </p>
-                    <div class="sp">
-                        <span class="sp1">
+                    {{each value}}
+                    <li>
+                        <img src="{{$value.img}}" alt=""> {{if $value.info_ty}}
+                        <div class="info">
+                            {{$value.info_ty}}
+                        </div>
+                        {{/if}}
+                        <p class="p1">
+                            {{$value.text}}
+                        </p>
+                        <div class="sp">
+                            <span class="sp1">
                             {{$value.totalnum}}
                         </span>
-                        <span class="sp2">
+                            <span class="sp2">
                             {{$value.num}}
                         </span>
-                    </div>
-                    <div class="app">
-                        <span class="p2">
+                        </div>
+                        <div class="app">
+                            <span class="p2">
                         {{$value.apply}}
                     </span>
-                    <span class="s3">
+                            <span class="s3">
                         申请
                     </span>
-                    </div>
-                    {{if $value.report}}
-                    <p class="pp">
-                        报告数量 : {{$value.report}}
-                    </p>
-                    
-                    {{else}}
-                    <p class="pp_">
-                        查看试用名单
-                    </p>
-                    {{/if}}
-                </li>
-                {{/each}}
+                        </div>
+                        {{if $value.report}}
+                        <p class="pp">
+                            报告数量 : {{$value.report}}
+                        </p>
+
+                        {{else}}
+                        <p class="pp_">
+                            查看试用名单
+                        </p>
+                        {{/if}}
+                    </li>
+                    {{/each}}
                 </script>
                 <!-- 大众试用 e-->
                 <!-- 大众申请 s -->
                 <script type="text/html" id="i3">
                     {{each value}}
                     <li>
-                        <img src="{{$value.img}}" alt="">
-                        {{if $value.info_ty}}
+                        <img src="{{$value.img}}" alt=""> {{if $value.info_ty}}
                         <div class="info">
                             {{$value.info_ty}}
                         </div>
@@ -188,7 +209,7 @@
                             <span class="p2">
                             {{$value.apply}}
                         </span>
-                        <span class="s3">
+                            <span class="s3">
                             申请
                         </span>
                         </div>
@@ -196,7 +217,7 @@
                         <p class="pp">
                             报告数量 : {{$value.report}}
                         </p>
-                        
+
                         {{else}}
                         <p class="pp_">
                             查看试用名单
@@ -204,14 +225,13 @@
                         {{/if}}
                     </li>
                     {{/each}}
-                    </script>
+                </script>
                 <!--大众申请 e  -->
                 <!-- 使用中 s -->
                 <script type="text/html" id="i4">
                     {{each value}}
                     <li>
-                        <img src="{{$value.img}}" alt="">
-                        {{if $value.info_ty}}
+                        <img src="{{$value.img}}" alt=""> {{if $value.info_ty}}
                         <div class="info">
                             {{$value.info_ty}}
                         </div>
@@ -231,7 +251,7 @@
                             <span class="p2">
                             {{$value.apply}}
                         </span>
-                        <span class="s3">
+                            <span class="s3">
                             申请
                         </span>
                         </div>
@@ -239,7 +259,7 @@
                         <p class="pp">
                             报告数量 : {{$value.report}}
                         </p>
-                        
+
                         {{else}}
                         <p class="pp_">
                             查看试用名单
@@ -247,14 +267,13 @@
                         {{/if}}
                     </li>
                     {{/each}}
-                    </script>
+                </script>
                 <!-- 使用中 e-->
                 <!--结束 s  -->
                 <script type="text/html" id="i5">
                     {{each value}}
                     <li>
-                        <img src="{{$value.img}}" alt="">
-                        {{if $value.info_ty}}
+                        <img src="{{$value.img}}" alt=""> {{if $value.info_ty}}
                         <div class="info">
                             {{$value.info_ty}}
                         </div>
@@ -274,7 +293,7 @@
                             <span class="p2">
                             {{$value.apply}}
                         </span>
-                        <span class="s3">
+                            <span class="s3">
                             申请
                         </span>
                         </div>
@@ -282,7 +301,7 @@
                         <p class="pp">
                             报告数量 : {{$value.report}}
                         </p>
-                        
+
                         {{else}}
                         <p class="pp_">
                             查看试用名单
@@ -290,7 +309,7 @@
                         {{/if}}
                     </li>
                     {{/each}}
-                    </script>
+                </script>
                 <!-- 结束 e -->
                 <!-- 体验师专享 s-->
                 <div class="item">
@@ -321,8 +340,7 @@
                 <script type="text/html" id="i6">
                     {{each value}}
                     <li>
-                        <img src="{{$value.img}}" alt="">
-                        {{if $value.info_ty}}
+                        <img src="{{$value.img}}" alt=""> {{if $value.info_ty}}
                         <div class="info">
                             {{$value.info_ty}}
                         </div>
@@ -342,7 +360,7 @@
                             <span class="p2">
                             {{$value.apply}}
                         </span>
-                        <span class="s3">
+                            <span class="s3">
                             申请
                         </span>
                         </div>
@@ -350,7 +368,7 @@
                         <p class="pp">
                             报告数量 : {{$value.report}}
                         </p>
-                        
+
                         {{else}}
                         <p class="pp_">
                             查看试用名单
@@ -358,14 +376,13 @@
                         {{/if}}
                     </li>
                     {{/each}}
-                    </script>
+                </script>
                 <!-- 全部 -->
                 <!-- 申请 s-->
                 <script type="text/html" id="i7">
                     {{each value}}
                     <li>
-                        <img src="{{$value.img}}" alt="">
-                        {{if $value.info_ty}}
+                        <img src="{{$value.img}}" alt=""> {{if $value.info_ty}}
                         <div class="info">
                             {{$value.info_ty}}
                         </div>
@@ -385,7 +402,7 @@
                             <span class="p2">
                             {{$value.apply}}
                         </span>
-                        <span class="s3">
+                            <span class="s3">
                             申请
                         </span>
                         </div>
@@ -393,7 +410,7 @@
                         <p class="pp">
                             报告数量 : {{$value.report}}
                         </p>
-                        
+
                         {{else}}
                         <p class="pp_">
                             查看试用名单
@@ -401,14 +418,13 @@
                         {{/if}}
                     </li>
                     {{/each}}
-                    </script>
+                </script>
                 <!--申请  e-->
                 <!-- 试用 -->
                 <script type="text/html" id="i8">
                     {{each value}}
                     <li>
-                        <img src="{{$value.img}}" alt="">
-                        {{if $value.info_ty}}
+                        <img src="{{$value.img}}" alt=""> {{if $value.info_ty}}
                         <div class="info">
                             {{$value.info_ty}}
                         </div>
@@ -428,7 +444,7 @@
                             <span class="p2">
                             {{$value.apply}}
                         </span>
-                        <span class="s3">
+                            <span class="s3">
                             申请
                         </span>
                         </div>
@@ -436,7 +452,7 @@
                         <p class="pp">
                             报告数量 : {{$value.report}}
                         </p>
-                        
+
                         {{else}}
                         <p class="pp_">
                             查看试用名单
@@ -444,14 +460,13 @@
                         {{/if}}
                     </li>
                     {{/each}}
-                    </script>
+                </script>
                 <!--  试用-->
                 <!-- over -->
                 <script type="text/html" id="i9">
                     {{each value}}
                     <li>
-                        <img src="{{$value.img}}" alt="">
-                        {{if $value.info_ty}}
+                        <img src="{{$value.img}}" alt=""> {{if $value.info_ty}}
                         <div class="info">
                             {{$value.info_ty}}
                         </div>
@@ -471,7 +486,7 @@
                             <span class="p2">
                             {{$value.apply}}
                         </span>
-                        <span class="s3">
+                            <span class="s3">
                             申请
                         </span>
                         </div>
@@ -479,7 +494,7 @@
                         <p class="pp">
                             报告数量 : {{$value.report}}
                         </p>
-                        
+
                         {{else}}
                         <p class="pp_">
                             查看试用名单
@@ -487,18 +502,16 @@
                         {{/if}}
                     </li>
                     {{/each}}
-                    </script>
+                </script>
                 <!-- over -->
                 <!-- 体验师专享 e-->
             </div>
             <footer class="foo bx">
                 <div class="hide_">
-                    <img src="../img/images/more.png" alt="">
-                    请点击加载更多
+                    <img src="../img/images/more.png" alt=""> 请点击加载更多
                 </div>
                 <div class="show_">
-                    <img src="../img/images/loading-icon.gif" alt="">
-                    请稍侯
+                    <img src="../img/images/loading-icon.gif" alt=""> 请稍侯
                 </div>
             </footer>
         </section>
@@ -506,19 +519,19 @@
     <!-- jquery s -->
     <script>
         //第一层
-        $('.head_tab_top ul li').click(function () {//给所有小li绑定点击事件
-            $(this).addClass('active').siblings().removeClass('active');//点谁给谁加类名
-            let index = $(this).index();//拿到自个当前下标
-            $('.head_tab_bottom .item').eq(index).show().siblings().hide();//以下标为引，让下边盒子对应的div隐藏or显示
-        })
-        //第二层
-        $('.solo ul li').click(function () {
-            $(this).addClass('act').siblings().removeClass('act');
-            let index = $(this).index();
-            $('.solo_r .it').eq(index).show().siblings().hide();
-        })
-        //再一层
-        $('.so_l ul li').click(function () {
+        $('.head_tab_top ul li').click(function() { //给所有小li绑定点击事件
+                $(this).addClass('active').siblings().removeClass('active'); //点谁给谁加类名
+                let index = $(this).index(); //拿到自个当前下标
+                $('.head_tab_bottom .item').eq(index).show().siblings().hide(); //以下标为引，让下边盒子对应的div隐藏or显示
+            })
+            //第二层
+        $('.solo ul li').click(function() {
+                $(this).addClass('act').siblings().removeClass('act');
+                let index = $(this).index();
+                $('.solo_r .it').eq(index).show().siblings().hide();
+            })
+            //再一层
+        $('.so_l ul li').click(function() {
             $(this).addClass('ac').siblings().removeClass('ac');
             let index = $(this).index();
             $('.solo_l .ite').eq(index).show().siblings().hide();
@@ -527,11 +540,11 @@
     <!-- jquery e -->
     <!-- xuanr 试用加载更多-->
     <script>
-        $('.hide_').click(function () {
+        $('.hide_').click(function() {
             $(this).hide();
             $('.show_').show();
-            setTimeout(function () {
-                setTimeout(function () {
+            setTimeout(function() {
+                setTimeout(function() {
                     $('.hide_').show();
                     $('.show_').hide();
                     myajax('http://192.168.31.110:3000/useing/public', c2)
@@ -676,5 +689,6 @@
     <!--b 底部样式 end -->
 </body>
 <script src="../js/use_tem.js"></script>
+<script src="../js/up_.js"></script>
 
 </html>

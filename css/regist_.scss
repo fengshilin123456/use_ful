@@ -1,0 +1,71 @@
+.bx {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+section {
+    background-color: #f7f7f7;
+    width: 100%;
+    overflow: hidden;
+    .bg_ {
+        background-color: #fff;
+        margin-top: 25px;
+        overflow: hidden;
+        .reg {
+            font-size: 18px;
+            margin-top: 25px;
+            padding-left: 25px;
+            border-left: 4px solid red;
+            box-sizing: border-box;
+        }
+        form {
+            position: relative;
+            .fr_in {
+                margin-top: 70px;
+            }
+            .tw_in {
+                width: 240px;
+            }
+            input,
+            button {
+                width: 400px;
+                height: 50px;
+                font-size: 16px;
+                border-radius: 10px;
+                margin: 15px 300px;
+                text-indent: 2em;
+            }
+            span {
+                position: absolute;
+                top: 156px;
+                left: 570px;
+                display: inline-block;
+                border-radius: 10px;
+                width: 130px;
+                height: 50px;
+                text-align: center;
+                line-height: 50px;
+                font-size: 18px;
+            }
+            .th_sp {
+                position: absolute;
+                top: 238px;
+                left: 570px;
+                background-color: #fff;
+                border: 1px solid #a3a3a3;
+            }
+            button {
+                text-align: center;
+                text-indent: 0em;
+                background-color: #fe5341;
+                border: 0px;
+                color: #fff;
+                font-size: 20px;
+                margin-bottom: 148px;
+            }
+            .pict {
+                background: url(../img/img/imgCode.jpg) no-repeat;
+            }
+        }
+    }
+}

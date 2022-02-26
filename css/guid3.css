@@ -3,11 +3,16 @@ section {
   background-color: #f7f7f7;
 }
 
+section .bx {
+  overflow: hidden;
+}
+
 section .bx .catalo {
   margin: 10px 0px;
 }
 
 section .bx .conent {
+  float: left;
   background-color: #fff;
   width: 700px;
   overflow: hidden;
@@ -84,4 +89,42 @@ section .bx .conent .prev_ {
 
 section .bx .conent .next_ {
   margin-bottom: 50px;
+}
+
+section .bx .share_ {
+  float: left;
+  margin-left: 30px;
+  width: 270px;
+  height: 110px;
+  background-color: #fff;
+}
+
+section .bx .share_ .sh_left,
+section .bx .share_ .sh_right {
+  float: left;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  width: 135px;
+  height: 110px;
+  box-sizing: border-box;
+}
+
+section .bx .share_ .sh_left > div,
+section .bx .share_ .sh_left p,
+section .bx .share_ .sh_right > div,
+section .bx .share_ .sh_right p {
+  height: 55px;
+  width: 135px;
+  text-align: center;
+  padding-top: 28px;
+  box-sizing: border-box;
+}
+
+section .bx .share_ .sh_left > p,
+section .bx .share_ .sh_right > p {
+  padding-top: 5px;
+}
+
+section .bx .share_ .sh_left .fenxiang,
+section .bx .share_ .sh_right .fenxiang {
+  margin-left: 40px;
 }

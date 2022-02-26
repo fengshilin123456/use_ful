@@ -8,16 +8,38 @@
     <title>首页</title>
     <link rel="stylesheet" href="./css/bace.css">
     <link rel="stylesheet" href="./css/public11.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-        integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/public.css">
     <link rel="stylesheet" href="./css/index_tem.css">
+    <link rel="stylesheet" href="./css/up.css">
 
 </head>
 
 <body>
-
+    <div class="up">
+        <div class="j_left">
+            <p>极果账号登录</p>
+            <input type="text" placeholder="手机号">
+            <input type="password" placeholder="密码">
+            <div class="d_up">
+                <input type="checkbox" />下次自动登录
+                <button>登录</button>
+            </div>
+            <div class="forget">
+                <p>注册新账号</p>
+                <p class="for_p">忘记密码？</p>
+            </div>
+        </div>
+        <div class="j_right">
+            <p>社交网络账号登录</p>
+            <div class="j_img"><img src="./img/img/code.png" alt=""></div>
+            <div>
+                <p>微博</p>
+                <p class="j_q">QQ</p>
+            </div>
+        </div>
+    </div>
     <div class="box">
         <!--头部 start -->
         <div class="bj">
@@ -33,7 +55,10 @@
                 <div>
                     <span class="btn" target="blank"><a href="https://www.baidu.com/"><i
                                 class="fa fa-search"></i></a></span>
-                    <button><a href="./up.html" target="blank">登录</a></button>
+
+
+                    <button class="git_up"><a>登录</a></button>
+
                     <button><a href="./regist.html" target="blank">注册</a></button>
                 </div>
             </div>
@@ -215,29 +240,29 @@
     <script src="./js/index_tem.js"></script>
     <script type="text/html" id="tem">
         <!-- 
-        <!--m 这里写渲染数据 -->
+        <--m 这里写渲染数据 -->
         {{each value}}
-    <li>
-        <img src={{$value.img}}>
-        <p>{{$value.text}}</p>
-        <div>
-            <span>
+        <li>
+            <img src={{$value.img}}>
+            <p>{{$value.text}}</p>
+            <div>
+                <span>
                 <img src="./img/images/xin.png" alt="">
                 {{$value.like}}
             </span>
-            <span>
+                <span>
                 <img src="./img/images/xin.png" alt="">
                 {{$value.words}}
             </span>
-        </div>
-    </li>
-    {{/each}} -->
+            </div>
+        </li>
+        {{/each}} -->
     </script>
     <!--  -->
     <script src="./js/jquery.min.js"></script>
     <script>
         function ajax_() {
-            $.get('http://192.168.31.110:3000/guid/hot', function (a) {
+            $.get('http://192.168.31.110:3000/guid/hot', function(a) {
                 for (let i = 0; i < a.length; i++) {
                     $('.tem_one_ul').append(`
                     <li>
@@ -292,7 +317,7 @@
     <section id="foot">
         <section class="footer bx">
             <div class="footer_left">
-                <img src="./img/img/code.png">
+                <img src="./img/img/code.png" alt="">
             </div>
             <div class="footer_centre">
                 <img src="./img/img/logoImg.jpg" alt="">
@@ -421,5 +446,6 @@
     </section>
     <!--b 底部样式 end -->
 </body>
+<script src="./js/up_.js"></script>
 
 </html>

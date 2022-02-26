@@ -30,7 +30,7 @@ count_down();
 function count_down() {
     var span_ = document.querySelector('.span_')
     var time = new Date();
-    var over = new Date('2 26 ,2022,14:00:00');
+    var over = new Date('3 26 ,2022,14:00:00');
     var diff_time = over.getTime() - time.getTime();
     var d = parseInt(diff_time / 1000 / 60 / 60 / 24);
     var h = parseInt(diff_time / 1000 / 60 / 60 % 24);
