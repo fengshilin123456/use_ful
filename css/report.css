@@ -1,0 +1,68 @@
+#rep { background-color: #f7f7f7; padding-top: 22px; }
+
+.rep_one { text-align: center; font-size: 24px; color: #000; }
+
+.rep_one h1 { line-height: 85px; font-weight: 500; }
+
+.rep_tab_top { border-bottom: 1px solid #f5f5f5; }
+
+.rep_tab_top ul { overflow: hidden; }
+
+.rep_tab_top ul li { float: left; color: #9ca296; font-size: 18px; width: 166px; height: 33px; text-align: center; }
+
+.rep_tab_top ul li:nth-child(1) { margin-left: 333px; }
+
+.rep_tab_top ul .repc { color: #fd5238; border-bottom: 3px solid #fd5238; }
+
+.rep_ .ite { display: none; overflow: hidden; }
+
+.rep_ .ite .left { float: left; width: 704px; margin-right: 22px; }
+
+.rep_ .ite .left li { width: 704px; height: 419px; position: relative; }
+
+.rep_ .ite .left .z { position: relative; }
+
+.rep_ .ite .left .z img { width: 100%; height: 100%; }
+
+.rep_ .ite .left .z .opc { position: absolute; bottom: 0px; width: 704px; height: 121px; background-color: #f3efec; opacity: 0.8; }
+
+.rep_ .ite .left .z .opc .im { margin-left: 25px; }
+
+.rep_ .ite .left .z .opc .im img { width: 20px; height: 20px; border-radius: 50%; }
+
+.rep_ .ite .left .z .opc .im .s1 { color: #fb736c; }
+
+.rep_ .ite .left .z .opc .im .s2 { color: #a7a3a2; }
+
+.rep_ .ite .left .z p { margin-left: 25px; line-height: 42px; font-size: 14px; }
+
+.rep_ .ite .right { float: left; width: 274px; }
+
+.rep_ .ite .right .h1, .rep_ .ite .right .h1_ { border-left: 6px solid #fd5238; padding-left: 24px; color: #4f4f59; font-size: 14px; margin-bottom: 25px; }
+
+.rep_ .ite .right .h1_ { margin-top: 64px; }
+
+.rep_ .ite .right .h2, .rep_ .ite .right .h3, .rep_ .ite .right .h4 { margin-top: 20px; }
+
+.rep_ .ite .right .h2 h2, .rep_ .ite .right .h3 h2, .rep_ .ite .right .h4 h2 { color: #303a46; font-weight: 500; }
+
+.rep_ .ite .right .h2 p, .rep_ .ite .right .h3 p, .rep_ .ite .right .h4 p { color: #b1b5b6; font-size: 14px; }
+
+/*  */
+.re_u1 li { width: 704px; height: 419px; position: relative; }
+
+.re_u1 .z { position: relative; }
+
+.re_u1 .z img { width: 100%; height: 100%; }
+
+.re_u1 .z .opc { position: absolute; bottom: 0px; width: 704px; height: 121px; background-color: #f3efec; opacity: 0.8; }
+
+.re_u1 .z .opc .im { margin-left: 25px; }
+
+.re_u1 .z .opc .im img { width: 20px; height: 20px; border-radius: 50%; }
+
+.re_u1 .z .opc .im .s1 { color: #fb736c; }
+
+.re_u1 .z .opc .im .s2 { color: #a7a3a2; }
+
+.re_u1 .z p { margin-left: 25px; line-height: 42px; font-size: 14px; }

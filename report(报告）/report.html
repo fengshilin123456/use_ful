@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>报告</title>
+    <link rel="stylesheet" href="../css/bace.css">
+    <link rel="stylesheet" href="../css/public.css">
+    <link rel="stylesheet" href="../css/public11.css">
+    <link rel="stylesheet" href="../css/report.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/template-web.js"></script>
+</head>
+
+<body>
+    <!--头部 start -->
+    <div class="box">
+        <div class="bj">
+            <div class="bx clearfix">
+                <div class="loge"><img src="../img/img/logonew.png" alt=""></div>
+                <ul class="clearfix clo">
+                    <li><a href="../index.html">首页</a></li>
+                    <li><a href="../play(酷玩)/play.html" target="blank">酷玩</a></li>
+                    <li><a href="../guid(导航)/guid.html" target="blank">导购</a></li>
+                    <li><a href="../use(试用)/use.html" target="blank">试用</a></li>
+                    <li class="active"><a href="../report(报告）/report.html" target="blank">报告</a></li>
+                </ul>
+                <div>
+                    <span class="btn" target="blank"><a href="https://www.baidu.com/"><i
+                                class="fa fa-search"></i></a></span>
+                    <button><a href="../up.html" target="blank">登录</a></button>
+
+                    <button><a href="../regist.html" target="blank">注册</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--头部 end -->
+    <!-- tab切换 start-->
+    <section class="report">
+        <div class="rep_one bx">
+            <h1>体验报告</h1>
+        </div>
+        <!--  -->
+        <div class="rep_tab_top bx">
+            <ul>
+                <li class="repc">最新</li>
+                <li>最热</li>
+            </ul>
+        </div>
+        <!-- 数据进来 s-->
+        <section id="rep">
+            <div class="rep_ bx">
+                <div class="rep1 ite" style="display: block;">
+                    <div class="left">
+                        <ul class="re_u"></ul>
+                    </div>
+                    <div class="right">
+                        <div class="h1">
+                            极果体验师
+                        </div>
+                        <img src="../img/img/tiyanImg.jpg" alt="">
+                        <div class="h2">
+                            <h2>福利</h2>
+                            <p>
+                                第一时间体验新品，大众试用优先通过，还有定向邀请试用，新品玩到手软！
+                            </p>
+                        </div>
+                        <div class="h3">
+                            <h2>要求</h2>
+                            <p>
+                                是某个领域的大神级玩家，在社交网络或圈子里有大影响力，善写作会拍摄。
+                            </p>
+                        </div>
+                        <div class="h4">
+                            <h2>申请</h2>
+                            <p>
+                                1. 关注极果公众号：jguojguo
+                                （或扫描下方二维码）
+                                2. 在公众号内回复：体验师
+                            </p>
+                        </div>
+                        <div class="h1_">
+                            关注我们
+                        </div>
+                        <img src="../img/img/myCode.jpg" alt="">
+                    </div>
+                </div>
+                <div class="rep2 ite">
+                    <!--  -->
+                    <div class="left">
+                        <ul class="re_u1"></ul>
+                    </div>
+                    <div class="right">
+                        <div class="h1">
+                            极果体验师
+                        </div>
+                        <img src="../img/img/tiyanImg.jpg" alt="">
+                        <div class="h2">
+                            <h2>福利</h2>
+                            <p>
+                                第一时间体验新品，大众试用优先通过，还有定向邀请试用，新品玩到手软！
+                            </p>
+                        </div>
+                        <div class="h3">
+                            <h2>要求</h2>
+                            <p>
+                                是某个领域的大神级玩家，在社交网络或圈子里有大影响力，善写作会拍摄。
+                            </p>
+                        </div>
+                        <div class="h4">
+                            <h2>申请</h2>
+                            <p>
+                                1. 关注极果公众号：jguojguo
+                                （或扫描下方二维码）
+                                2. 在公众号内回复：体验师
+                            </p>
+                        </div>
+                        <div class="h1_">
+                            关注我们
+                        </div>
+                        <img src="../img/img/myCode.jpg" alt="">
+                    </div>
+                    <!--  -->
+                </div>
+            </div>
+        </section>
+        <!--  -->
+        <script type="text/html" id="re1">
+            {{each value}}
+            <li>
+                <div class="z">
+                    <img src="{{$value.img}}">
+                        <div class="opc">
+                            <p>
+                                {{$value.text}}
+                            </p>
+                            <div class="im">
+                                <img src="../img/images/tx.jpg" alt="">
+                                {{if $value.uName}}
+                                <span class="s1">
+                                    {{$value.uName}}
+                                </span>
+                                {{/if}}
+                                <span class="s2">
+                                    {{$value.endTime}}
+                                </span>
+                            </div>
+                        </div>
+                </div>
+            </li>
+            {{/each}}
+        </script>
+        <!--  -->
+        <!--  -->
+        <script type="text/html" id="re2">
+            {{each value}}
+            <li>
+                <div class="z">
+                    <img src="{{$value.img}}">
+                        <div class="opc">
+                            <p>
+                                {{$value.text}}
+                            </p>
+                            <div class="im">
+                                <img src="../img/images/tx.jpg" alt="">
+                                {{if $value.uName}}
+                                <span class="s1">
+                                    {{$value.uName}}
+                                </span>
+                                {{/if}}
+                                <span class="s2">
+                                    {{$value.endTime}}
+                                </span>
+                            </div>
+                        </div>
+                </div>
+            </li>
+            {{/each}}
+        </script>
+        <!--  -->
+        <!-- 数据进来 e-->
+        <!-- jq -->
+        <script>
+            $('.rep_tab_top ul li').click(function () {
+                $(this).addClass('repc').siblings().removeClass('repc');
+                let index = $(this).index();
+                $('.rep_ .ite').eq(index).show().siblings().hide();
+            })
+        </script>
+        <!-- jq -->
+    </section>
+    <!-- tab切换 end-->
+
+    <!--b 底部样式 start -->
+    <section id="foot">
+        <section class="footer bx">
+            <div class="footer_left">
+                <img src="../img/img/code.png" alt="">
+            </div>
+            <div class="footer_centre">
+                <img src="../img/img/logoImg.jpg" alt="">
+                <p>全球酷玩试用导购平台<br>酷·新奇·好玩·品质</p>
+                <p>微信添加“JguoJguo”<br>获取我们的服务。</p>
+            </div>
+            <div class="footer_right">
+                <dl>
+                    <dt><a href="#">免费试用</a></dt>
+                    <dd><a href="#">试用流程</a></dd>
+                    <dd><a href="#">如何提高成功率</a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="#">友情链接</a></dt>
+                    <dd>
+                        <span>
+                            <a href="#">智东西</a>
+                        </span>
+                        <span>
+                            <a href="#">WEIBUSI</a>
+                        </span>
+                    </dd>
+                    <dd>
+                        <span>
+                            <a href="#">搜狐IT</a>
+                        </span>
+
+                        <span>
+                            <a href="#">腾讯科技</a>
+                        </span>
+                    </dd>
+                    <dd>
+                        <span>
+                            <a href="#">搜狐数码</a>
+                        </span>
+                        <span>
+                            <a href="#">凤凰科技</a>
+                        </span>
+                    </dd>
+                    <dd>
+                        <span>
+                            <a href="#">凤凰数码 </a>
+                        </span>
+                        <span>
+                            <a href="#">PConline</a>
+                        </span>
+                    </dd>
+                    <dd>
+                        <span>
+                            <a href="#">泡泡网</a>
+                        </span>
+                        <span>
+                            <a href="#">3W咖啡</a>
+                        </span>
+                    </dd>
+                    <dd>
+                        <span>
+                            <a href="#">ZUK社区</a>
+                        </span>
+                        <span>
+                            <a href="#">亿觅emie</a>
+                        </span>
+                    </dd>
+                    <dd>
+                        <span>
+                            <a href="#">极客公园</a>
+                        </span>
+                        <span>
+                            <a href="#">易迅易启玩</a>
+                        </span>
+                    </dd>
+                    <dd>
+                        <span>
+                            <a href="#">果库</a>
+                        </span>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <a href="#">购买攻略</a>
+                    </dt>
+                    <dd>
+                        <a href="#">美亚海淘教程</a>
+                    </dd>
+                    <dd>
+                        <a href="#">日亚海淘教程</a>
+                    </dd>
+                    <dd>
+                        <a href="#">海淘转运攻略</a>
+                    </dd>
+                    <dd>
+                        <a href="#">kickstarter 众筹购买攻略</a>
+                    </dd>
+                    <dd>
+                        <a href="#">indiegogo 众筹购买攻略</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <a href="#">厂商合作</a>
+                    </dt>
+                    <dd>
+                        <a href="#">关于极果</a>
+                    </dd>
+                    <dd>
+                        <a href="#">联系我们</a>
+                    </dd>
+                    <dd>
+                        <a href="#">商务合作：BD@jiguo.com</a>
+                    </dd>
+                    <dd>
+                        <a href="#">CEO邮箱：CEO@jiguo.com</a>
+                    </dd>
+                </dl>
+            </div>
+            <p>© 2016 极果版权所有</p>
+        </section>
+        <div id="btn_">
+            <a href="">
+                <p>返</p>
+                <p>回</p>
+                <p>顶</p>
+                <p>部</p>
+            </a>
+        </div>
+    </section>
+    <!--b 底部样式 end -->
+</body>
+<script src="../js/report_tem.js"></script>
+
+</html>
