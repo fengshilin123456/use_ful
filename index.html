@@ -8,8 +8,9 @@
     <title>首页</title>
     <link rel="stylesheet" href="./css/bace.css">
     <link rel="stylesheet" href="./css/public11.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/public.css">
     <link rel="stylesheet" href="./css/index_tem.css">
 
@@ -216,27 +217,27 @@
         <!-- 
         <!--m 这里写渲染数据 -->
         {{each value}}
-        <li>
-            <img src={{$value.img}}>
-            <p>{{$value.text}}</p>
-            <div>
-                <span>
+    <li>
+        <img src={{$value.img}}>
+        <p>{{$value.text}}</p>
+        <div>
+            <span>
                 <img src="./img/images/xin.png" alt="">
                 {{$value.like}}
             </span>
-                <span>
+            <span>
                 <img src="./img/images/xin.png" alt="">
                 {{$value.words}}
             </span>
-            </div>
-        </li>
-        {{/each}} -->
+        </div>
+    </li>
+    {{/each}} -->
     </script>
     <!--  -->
     <script src="./js/jquery.min.js"></script>
     <script>
         function ajax_() {
-            $.get('http://192.168.31.110:3000/guid/hot', function(a) {
+            $.get('http://192.168.31.110:3000/guid/hot', function (a) {
                 for (let i = 0; i < a.length; i++) {
                     $('.tem_one_ul').append(`
                     <li>
@@ -409,6 +410,14 @@
             </div>
             <p>© 2016 极果版权所有</p>
         </section>
+        <div class="btn_">
+            <a href="">
+                <p>返</p>
+                <p>回</p>
+                <p>顶</p>
+                <p>部</p>
+            </a>
+        </div>
     </section>
     <!--b 底部样式 end -->
 </body>
