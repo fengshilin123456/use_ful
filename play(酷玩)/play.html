@@ -26,7 +26,8 @@
                     <li><a href="../report(报告）/report.html" target="blank">报告</a></li>
                 </ul>
                 <div>
-                    <span class="btn" target="blank"><a href="https://www.baidu.com/"><i class="fa fa-search"></i></a></span>
+                    <span class="btn" target="blank"><a href="https://www.baidu.com/"><i
+                                class="fa fa-search"></i></a></span>
                     <button><a href="../up.html" target="blank">登录</a></button>
 
                     <button><a href="../regist.html" target="blank">注册</a></button>
@@ -180,217 +181,217 @@
     <!--m s 3.1-->
     <script type="text/html" id="ipt1">
         <!-- 生活 start -->
-        <section class="live">
+    <section class="live">
 
-            <div class="live_h">
-                生活
+        <div class="live_h">
+            生活
+        </div>
+        <section class="se1">
+            {{each value}}
+            <div class="live_i">
+                <img src="{{$value[0].icon}}">
+                <p>
+                    {{$value[0].productName}} ({{$value[0].nums}})
+                </p>
             </div>
-            <section class="se1">
-                {{each value}}
-                <div class="live_i">
-                    <img src="{{$value[0].icon}}">
-                    <p>
-                        {{$value[0].productName}} ({{$value[0].nums}})
-                    </p>
-                </div>
-                {{/each}}
-            </section>
-            <div class="live_d">
-                {{each value}}
-                <span>
+            {{/each}}
+        </section>
+        <div class="live_d">
+            {{each value}}
+            <span>
                 {{$value[0].productName}}
                 ({{$value[0].nums}})
             </span> {{/each}} {{each value}}
-                <span>
+            <span>
                 {{$value[1].productName}}
                 ({{$value[1].nums}})
             </span> {{/each}} {{each value}}
-                <span>
+            <span>
                 {{$value[2].productName}}
                 ({{$value[2].nums}})
             </span> {{/each}}
-            </div>
+        </div>
 
-        </section>
-        <!--生活 end  -->
-        <!-- 护理 start -->
-        <section class="murse">
-            <div class="live_h">
-                个人护理
+    </section>
+    <!--生活 end  -->
+    <!-- 护理 start -->
+    <section class="murse">
+        <div class="live_h">
+            个人护理
+        </div>
+        <section class="se1">
+            {{each value}}
+            {{if $value[1].icon}}
+            <div class="live_i">
+                <img src="{{$value[1].icon}}" alt="">
             </div>
-            <section class="se1">
-                {{each value}} 
-                {{if $value[1].icon}}
-                <div class="live_i">
-                    <img src="{{$value[1].icon}}" alt="">
-                </div>
-                {{/if}}
-                {{/each}}
-            </section>
-            <div class="live_d">
-                {{each value}}
-                <span>
+            {{/if}}
+            {{/each}}
+        </section>
+        <div class="live_d">
+            {{each value}}
+            <span>
                 {{$value[1].productName}}
                 ({{$value[1].nums}})
             </span> {{/each}} {{each value}}
-                <span>
+            <span>
                 {{$value[2].productName}}
                 ({{$value[2].nums}})
             </span> {{/each}}
+        </div>
+    </section>
+    <!-- 护理 end -->
+    <!--健康 start -->
+    <section class="fitness">
+        <div class="live_h">
+            健康
+        </div>
+        <section class="se1">
+            {{each value}} {{if $value[2].icon}}
+            <div class="live_i">
+                <img src="{{$value[2].icon}}" alt="">
             </div>
+            {{/if}} {{/each}}
         </section>
-        <!-- 护理 end -->
-        <!--健康 start -->
-        <section class="fitness">
-            <div class="live_h">
-                健康
-            </div>
-            <section class="se1">
-                {{each value}} {{if $value[2].icon}}
-                <div class="live_i">
-                    <img src="{{$value[2].icon}}" alt="">
-                </div>
-                {{/if}} {{/each}}
-            </section>
-            <div class="live_d">
-                {{each value}}
-                <span>
+        <div class="live_d">
+            {{each value}}
+            <span>
                 {{$value[2].productName}}
                 ({{$value[2].nums}})
             </span> {{/each}} {{each value}}
-                <span>
+            <span>
                 {{$value[3].productName}}
                 ({{$value[3].nums}})
             </span> {{/each}}
+        </div>
+    </section>
+    <!--健康 end -->
+    <!--智能穿戴 start  -->
+    <section class="wear">
+        <div class="live_h">
+            智能穿戴
+        </div>
+        <section class="se1">
+            {{each value}} {{if $value[3].icon}}
+            <div class="live_i">
+                <img src="{{$value[3].icon}}" alt="">
             </div>
+            {{/if}} {{/each}}
         </section>
-        <!--健康 end -->
-        <!--智能穿戴 start  -->
-        <section class="wear">
-            <div class="live_h">
-                智能穿戴
-            </div>
-            <section class="se1">
-                {{each value}} {{if $value[3].icon}}
-                <div class="live_i">
-                    <img src="{{$value[3].icon}}" alt="">
-                </div>
-                {{/if}} {{/each}}
-            </section>
-            <div class="live_d">
-                {{each value}}
-                <span>
+        <div class="live_d">
+            {{each value}}
+            <span>
                 {{$value[3].productName}}
                 ({{$value[3].nums}})
             </span> {{/each}} {{each value}}
-                <span>
+            <span>
                 {{$value[4].productName}}
                 ({{$value[4].nums}})
             </span> {{/each}}
+        </div>
+    </section>
+    <!-- 智能穿戴 end -->
+    <!-- 出行 start -->
+    <section class="trip">
+        <div class="live_h">
+            出行
+        </div>
+        <section class="se1">
+            {{each value}} {{if $value[4].icon}}
+            <div class="live_i">
+                <img src="{{$value[4].icon}}" alt="">
             </div>
+            {{/if}} {{/each}}
         </section>
-        <!-- 智能穿戴 end -->
-        <!-- 出行 start -->
-        <section class="trip">
-            <div class="live_h">
-                出行
-            </div>
-            <section class="se1">
-                {{each value}} {{if $value[4].icon}}
-                <div class="live_i">
-                    <img src="{{$value[4].icon}}" alt="">
-                </div>
-                {{/if}} {{/each}}
-            </section>
-            <div class="live_d">
-                {{each value}}
-                <span>
+        <div class="live_d">
+            {{each value}}
+            <span>
                 {{$value[4].productName}}
                 ({{$value[4].nums}})
             </span> {{/each}} {{each value}}
-                <span>
+            <span>
                 {{$value[5].productName}}
                 ({{$value[5].nums}})
             </span> {{/each}}
+        </div>
+    </section>
+    <!-- 出行 end -->
+    <!--运动 start  -->
+    <section class="exercise">
+        <div class="live_h">
+            运动户外
+        </div>
+        <section class="se1">
+            {{each value}} {{if $value[5].icon}}
+            <div class="live_i">
+                <img src="{{$value[5].icon}}" alt="">
             </div>
+            {{/if}} {{/each}}
         </section>
-        <!-- 出行 end -->
-        <!--运动 start  -->
-        <section class="exercise">
-            <div class="live_h">
-                运动户外
-            </div>
-            <section class="se1">
-                {{each value}} {{if $value[5].icon}}
-                <div class="live_i">
-                    <img src="{{$value[5].icon}}" alt="">
-                </div>
-                {{/if}} {{/each}}
-            </section>
-            <div class="live_d">
-                {{each value}}
-                <span>
+        <div class="live_d">
+            {{each value}}
+            <span>
                 {{$value[5].productName}}
                 ({{$value[5].nums}})
             </span> {{/each}} {{each value}}
-                <span>
+            <span>
                 {{$value[5].productName}}
                 ({{$value[5].nums}})
             </span> {{/each}}
-            </div>
+        </div>
 
-        </section>
-        <!-- 运动 end -->
-        <!-- 摄影 start -->
-        <section class="photo">
-            <div class="live_h">
-                摄影
+    </section>
+    <!-- 运动 end -->
+    <!-- 摄影 start -->
+    <section class="photo">
+        <div class="live_h">
+            摄影
+        </div>
+        <section class="se1">
+            {{each value}}
+            <div class="live_i">
+                <img src="{{$value[0].icon}}" alt="">
             </div>
-            <section class="se1">
-                {{each value}}
-                <div class="live_i">
-                    <img src="{{$value[0].icon}}" alt="">
-                </div>
-                {{/each}}
-            </section>
-            <div class="live_d">
-                {{each value}}
-                <span>
+            {{/each}}
+        </section>
+        <div class="live_d">
+            {{each value}}
+            <span>
                 {{$value[4].productName}}
                 ({{$value[4].nums}})
             </span> {{/each}} {{each value}}
-                <span>
+            <span>
                 {{$value[3].productName}}
                 ({{$value[3].nums}})
             </span> {{/each}}
+        </div>
+    </section>
+    <!-- 摄影 end -->
+    <!-- 手机 start -->
+    <section class="phone">
+        <div class="live_h">
+            手机
+        </div>
+        <section class="se1">
+            {{each value}} {{if $value[1].icon}}
+            <div class="live_i">
+                <img src="{{$value[1].icon}}" alt="">
             </div>
+            {{/if}} {{/each}}
         </section>
-        <!-- 摄影 end -->
-        <!-- 手机 start -->
-        <section class="phone">
-            <div class="live_h">
-                手机
-            </div>
-            <section class="se1">
-                {{each value}} {{if $value[1].icon}}
-                <div class="live_i">
-                    <img src="{{$value[1].icon}}" alt="">
-                </div>
-                {{/if}} {{/each}}
-            </section>
-            <div class="live_d">
-                {{each value}}
-                <span>
+        <div class="live_d">
+            {{each value}}
+            <span>
                 {{$value[2].productName}}
                 ({{$value[2].nums}})
             </span> {{/each}} {{each value}}
-                <span>
+            <span>
                 {{$value[1].productName}}
                 ({{$value[1].nums}})
             </span> {{/each}}
-            </div>
-        </section>
-        <!-- 手机 end -->
+        </div>
+    </section>
+    <!-- 手机 end -->
     </script>
     <!--m e 3.1 -->
     <!-- 模板引擎 end -->
@@ -398,7 +399,7 @@
     <script src="../js/jquery.min.js"></script>
     <!-- 引入jquery -->
     <script>
-        $('.find_two ul li').click(function() {
+        $('.find_two ul li').click(function () {
             $(this).addClass('active').siblings().removeClass('active');
             let index = $(this).index();
             $('.find_three .item').eq(index).show().siblings().hide();
@@ -526,15 +527,15 @@
                 </dl>
             </div>
             <p>© 2016 极果版权所有</p>
-            <div class="btn_">
-                <a href="">
-                    <p>返</p>
-                    <p>回</p>
-                    <p>顶</p>
-                    <p>部</p>
-                </a>
-            </div>
         </section>
+        <div id="btn_">
+            <a href="">
+                <p>返</p>
+                <p>回</p>
+                <p>顶</p>
+                <p>部</p>
+            </a>
+        </div>
     </section>
     <!--b 底部样式 end -->
 </body>

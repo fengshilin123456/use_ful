@@ -22,8 +22,8 @@
 .footer p { text-align: center; color: #9f9da0; font-size: 14px; margin-bottom: 16px; }
 
 /*返回顶部  */
-.btn_ { width: 48px; height: 96px; background-color: transparent; border-radius: 6px; border: 1px solid gray; position: fixed; bottom: 50px; right: 50px; }
+#btn_ { width: 48px; height: 96px; background-color: transparent; border-radius: 6px; border: 1px solid gray; position: fixed; bottom: 50px; right: 50px; }
 
-.btn_ p { text-align: center; line-height: 24px; }
+#btn_ a p { text-align: center; line-height: 24px; }
 
 /* 返回顶部  */

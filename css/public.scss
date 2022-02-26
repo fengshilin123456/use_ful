@@ -2,8 +2,8 @@
     width: 1000px;
     margin: 0 auto;
 }
-#foot{
-    background-color:#505050;
+#foot {
+    background-color: #505050;
     position: relative;
 }
 .footer {
@@ -35,15 +35,15 @@
                     color: #ffffff;
                 }
             }
-            dd{
-                a{
-                    color:#9f9da0;
+            dd {
+                a {
+                    color: #9f9da0;
                     line-height: 20px;
                 }
             }
         }
     }
-    p{
+    p {
         text-align: center;
         color: #9f9da0;
         font-size: 14px;
@@ -51,7 +51,7 @@
     }
 }
 /*返回顶部  */
-.btn_ {
+#btn_ {
     width: 48px;
     height: 96px;
     background-color: transparent;
@@ -60,9 +60,11 @@
     position: fixed;
     bottom: 50px;
     right: 50px;
-    p {
-        text-align: center;
-        line-height: 24px;
+    a {
+        p {
+            text-align: center;
+            line-height: 24px;
+        }
     }
 }
 /* 返回顶部  */
