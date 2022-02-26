@@ -1,0 +1,210 @@
+.head_one {
+    text-align: center;
+    font-size: 24px;
+    color: #000;
+    h1 {
+        line-height: 85px;
+        font-weight: 500;
+    }
+}
+.head_tab_top {
+    border-bottom: 1px solid #f5f5f5;
+    ul {
+        overflow: hidden;
+        li {
+            float: left;
+            color: #9ca296;
+            font-size: 18px;
+            width: 166px;
+            height: 33px;
+            text-align: center;
+        }
+        li:nth-child(1) {
+            margin-left: 333px;
+        }
+        .active {
+            color: #fd5238;
+            border-bottom: 3px solid #fd5238;
+        }
+    }
+}
+#bgc {
+    background-color: #f7f7f7;
+}
+/* 以上无事 */
+.head_tab_bottom {
+    .item {
+        display: none;
+    }
+}
+/* 以上第一个tab切换隐藏 */
+/* 大众试用 start */
+.solo {
+    ul {
+        overflow: hidden;
+        li {
+            float: left;
+            font-size: 16px;
+            line-height: 52px;
+            margin-right: 120px;
+            color: #9ca296;
+        }
+        li:nth-child(1) {
+            margin-left: 234px;
+        }
+        .act {
+            color: #000;
+        }
+    }
+}
+.solo_r {
+    background-color: #f7f7f7;
+    .it {
+        display: none;
+    }
+}
+/* 全部 s */
+.ui1 {
+    overflow: hidden;
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    li {
+        float: left;
+        width: 224px;
+        height: 292px;
+        border-radius: 6px;
+        box-shadow: 1px 1px 1px 1px #f7f7f7;
+        background-color: #fff;
+        margin-bottom: 35px;
+        position: relative;
+        text-align: center;
+        img {
+            width: 224px;
+            height: 135px;
+            border-radius: 6px;
+        }
+        .info {
+            overflow: hidden;
+            line-height: 24px;
+            width: 42px;
+            height: 24px;
+            background-color: #ff5543;
+            border-radius: 0 6px 0 6px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            text-align: center;
+            color: #fff;
+        }
+        .p1 {
+            color: #000;
+            font-size: 18px;
+            line-height: 27px;
+            margin: 12px 13px 0 13px;
+            text-align: center;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .app {
+            overflow: hidden;
+            margin-top: 16px;
+            .p2 {
+                color: #ff5444;
+                width: 50px;
+                .s3 {
+                    float: left;
+                }
+            }
+        }
+        .pp {
+            margin-top: 10px;
+            color: #d0d1d3;
+        }
+        .pp_ {
+            @extend .pp;
+            color: #98cb54;
+        }
+        .sp {
+            text-align: center;
+            span {
+                display: inline-block;
+                width: 48px;
+                height: 24px;
+                border: 1px solid #9ca296;
+                border-radius: 6px;
+                margin: 6px;
+                line-height: 22px;
+            }
+            .p2 {
+                font-size: 12px;
+            }
+        }
+    }
+}
+.ui1_ {
+    @extend .ui1;
+}
+.ui2 {
+    @extend .ui1;
+}
+.ui3 {
+    @extend .ui1;
+}
+.ui4 {
+    @extend .ui1;
+}
+.u1 {
+    @extend .ui1;
+}
+.u2 {
+    @extend .ui1;
+}
+.u3 {
+    @extend .ui1;
+}
+.u4 {
+    @extend .ui1;
+}
+/* foo */
+.foo {
+    text-align: center;
+    .show_ {
+        display: none;
+    }
+}
+/* foo */
+/* 全部 e */
+/* 申请中 start*/
+
+/* 申请中 end*/
+/* 大众试用 end */
+/* 体验师 start */
+.so_l {
+    ul {
+        overflow: hidden;
+        li {
+            float: left;
+            font-size: 16px;
+            line-height: 52px;
+            margin-right: 120px;
+            color: #9ca296;
+        }
+        li:nth-child(1) {
+            margin-left: 234px;
+        }
+        .ac {
+            color: #000;
+        }
+    }
+}
+.solo_l {
+    background-color: #f7f7f7;
+    .ite {
+        display: none;
+    }
+}
+/* 体验师 end */
