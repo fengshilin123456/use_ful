@@ -18,18 +18,19 @@
         <div class="bj">
             <div class="bx clearfix">
                 <div class="loge"><img src="../img/img/logonew.png" alt=""></div>
-                <ul class="clearfix">
-                    <li><a href="#">首页</a></li>
-                    <li><a href="#">酷玩</a></li>
-                    <li><a href="#">导购</a></li>
-                    <li><a href="#">试用</a></li>
-                    <li><a href="#">报告</a></li>
+                <ul class="clearfix clo">
+                    <li><a href="../index.html">首页</a></li>
+                    <li class="active"><a href="play.html">酷玩</a></li>
+                    <li><a href="../guid(导航)/guid.html">导购</a></li>
+                    <li><a href="../use(试用)/use.html">试用</a></li>
+                    <li><a href="../report(报告）/report.html">报告</a></li>
                 </ul>
                 <div>
-                    <span class="btn"><i class="fa fa-search"></i></span>
-                    <button><a href="#">登录</a></button>
+                    <span class="btn" target="blank"><a href="https://www.baidu.com/"><i
+                                class="fa fa-search"></i></a></span>
+                    <button><a href="../up.html" target="blank">登录</a></button>
 
-                    <button><a href="#">注册</a></button>
+                    <button><a href="../regist.html" target="blank">注册</a></button>
                 </div>
             </div>
         </div>
@@ -107,22 +108,20 @@
     <!--z 1  -->
     <!--z 2  -->
     <script type="text/html" id="two">
-        {{each value}} 
-            {{if $value.num}}
-                <li>
-                    <img src={{$value.img}}>
-                    <p class="po">{{$value.text}}</p>
-                    <span>{{$value.totalnum}}</span>
-                    <span>{{$value.num}}台</span>
-                    <p class="pt">
-                    <i>{{$value.apply}}</i>申请
-                    </p>
-                    <div>
-                    {{$value.info_ty}}
-                    </div>
-                </li>
-            {{/if}} 
-        {{/each}}
+        {{each value}} {{if $value.num}}
+        <li>
+            <img src={{$value.img}}>
+            <p class="po">{{$value.text}}</p>
+            <span>{{$value.totalnum}}</span>
+            <span>{{$value.num}}台</span>
+            <p class="pt">
+                <i>{{$value.apply}}</i>申请
+            </p>
+            <div>
+                {{$value.info_ty}}
+            </div>
+        </li>
+        {{/if}} {{/each}}
     </script>
     <!--z 2 -->
     <!--z 3  -->
@@ -145,296 +144,253 @@
     <!--z 3 -->
     <!-- 2.1 -->
     <script type="text/html" id="item1">
-        {{each value}}
-            {{if $value.num}}
-                <li>
-                    <img src="{{$value.img}}" alt="">
-                    <p class="po">{{$value.text}}</p>
-                    <span>{{$value.totalnum}}</span>
-                    <span>{{$value.num}}台</span>
-                    <p class="pt">
-                        <i>
+        {{each value}} {{if $value.num}}
+        <li>
+            <img src="{{$value.img}}" alt="">
+            <p class="po">{{$value.text}}</p>
+            <span>{{$value.totalnum}}</span>
+            <span>{{$value.num}}台</span>
+            <p class="pt">
+                <i>
                             {{$value.apply}}
                         </i>申请
-                    </p>
-                </li>
-            {{/if}}
-        {{/each}}
+            </p>
+        </li>
+        {{/if}} {{/each}}
     </script>
     <!-- 2.1 -->
     <!-- 2.2 -->
     <script type="text/html" id="item2">
-        {{each value}}
-            {{if $value.num}}
-                <li>
-                    <img src="{{$value.img}}" alt="">
-                    <p class="po">{{$value.text}}</p>
-                    <span>{{$value.totalnum}}</span>
-                    <span>{{$value.num}}台</span>
-                    <p class="pt">
-                        <i>
+        {{each value}} {{if $value.num}}
+        <li>
+            <img src="{{$value.img}}" alt="">
+            <p class="po">{{$value.text}}</p>
+            <span>{{$value.totalnum}}</span>
+            <span>{{$value.num}}台</span>
+            <p class="pt">
+                <i>
                             {{$value.apply}}
                         </i>申请
-                    </p>
-                    <div>
-                        {{$value.info_ty}}
-                    </div>
-                </li>
-            {{/if}}
-        {{/each}}
+            </p>
+            <div>
+                {{$value.info_ty}}
+            </div>
+        </li>
+        {{/if}} {{/each}}
     </script>
     <!-- 2.2 -->
     <!--m s 3.1-->
     <script type="text/html" id="ipt1">
-    <!-- 生活 start -->
-    <section class="live">
+        <!-- 生活 start -->
+        <section class="live">
 
-        <div class="live_h">
-            生活
-        </div>
-        <section class="se1">
-            {{each value}}
-            <div class="live_i">
-                <img src="{{$value[0].icon}}">
-                <p>
-                    {{$value[0].productName}}
-                    ({{$value[0].nums}})
-                </p>
+            <div class="live_h">
+                生活
             </div>
-            {{/each}}
-        </section>
-        <div class="live_d">
-            {{each value}}
-            <span>
+            <section class="se1">
+                {{each value}}
+                <div class="live_i">
+                    <img src="{{$value[0].icon}}">
+                    <p>
+                        {{$value[0].productName}} ({{$value[0].nums}})
+                    </p>
+                </div>
+                {{/each}}
+            </section>
+            <div class="live_d">
+                {{each value}}
+                <span>
                 {{$value[0].productName}}
                 ({{$value[0].nums}})
-            </span>
-            {{/each}}
-            {{each value}}
-            <span>
+            </span> {{/each}} {{each value}}
+                <span>
                 {{$value[1].productName}}
                 ({{$value[1].nums}})
-            </span>
-            {{/each}}
-            {{each value}}
-            <span>
+            </span> {{/each}} {{each value}}
+                <span>
                 {{$value[2].productName}}
                 ({{$value[2].nums}})
-            </span>
-            {{/each}}
-        </div>
+            </span> {{/each}}
+            </div>
 
-    </section>
-    <!--生活 end  -->
-    <!-- 护理 start -->
-    <section class="murse">
-        <div class="live_h">
-            个人护理
-        </div>
-        <section class="se1">
-            {{each value}}
-            {{if $value[1].icon}}
-            <div class="live_i">
-                <img src="{{$value[1].icon}}" alt="">
-            </div>
-            {{/if}}
-            {{/each}}
         </section>
-        <div class="live_d">
-            {{each value}}
-            <span>
+        <!--生活 end  -->
+        <!-- 护理 start -->
+        <section class="murse">
+            <div class="live_h">
+                个人护理
+            </div>
+            <section class="se1">
+                {{each value}} {{if $value[1].icon}}
+                <div class="live_i">
+                    <img src="{{$value[1].icon}}" alt="">
+                </div>
+                {{/if}} {{/each}}
+            </section>
+            <div class="live_d">
+                {{each value}}
+                <span>
                 {{$value[1].productName}}
                 ({{$value[1].nums}})
-            </span>
-            {{/each}}
-            {{each value}}
-            <span>
+            </span> {{/each}} {{each value}}
+                <span>
                 {{$value[2].productName}}
                 ({{$value[2].nums}})
-            </span>
-            {{/each}}
-        </div>
-    </section>
-    <!-- 护理 end -->
-    <!--健康 start -->
-    <section class="fitness">
-        <div class="live_h">
-            健康
-        </div>
-        <section class="se1">
-            {{each value}}
-            {{if $value[2].icon}}
-            <div class="live_i">
-                <img src="{{$value[2].icon}}" alt="">
+            </span> {{/each}}
             </div>
-            {{/if}}
-            {{/each}}
         </section>
-        <div class="live_d">
-            {{each value}}
-            <span>
+        <!-- 护理 end -->
+        <!--健康 start -->
+        <section class="fitness">
+            <div class="live_h">
+                健康
+            </div>
+            <section class="se1">
+                {{each value}} {{if $value[2].icon}}
+                <div class="live_i">
+                    <img src="{{$value[2].icon}}" alt="">
+                </div>
+                {{/if}} {{/each}}
+            </section>
+            <div class="live_d">
+                {{each value}}
+                <span>
                 {{$value[2].productName}}
                 ({{$value[2].nums}})
-            </span>
-            {{/each}}
-            {{each value}}
-            <span>
+            </span> {{/each}} {{each value}}
+                <span>
                 {{$value[3].productName}}
                 ({{$value[3].nums}})
-            </span>
-            {{/each}}
-        </div>
-    </section>
-    <!--健康 end -->
-    <!--智能穿戴 start  -->
-    <section class="wear">
-        <div class="live_h">
-            智能穿戴
-        </div>
-        <section class="se1">
-            {{each value}}
-            {{if $value[3].icon}}
-            <div class="live_i">
-                <img src="{{$value[3].icon}}" alt="">
+            </span> {{/each}}
             </div>
-            {{/if}}
-            {{/each}}
         </section>
-        <div class="live_d">
-            {{each value}}
-            <span>
+        <!--健康 end -->
+        <!--智能穿戴 start  -->
+        <section class="wear">
+            <div class="live_h">
+                智能穿戴
+            </div>
+            <section class="se1">
+                {{each value}} {{if $value[3].icon}}
+                <div class="live_i">
+                    <img src="{{$value[3].icon}}" alt="">
+                </div>
+                {{/if}} {{/each}}
+            </section>
+            <div class="live_d">
+                {{each value}}
+                <span>
                 {{$value[3].productName}}
                 ({{$value[3].nums}})
-            </span>
-            {{/each}}
-            {{each value}}
-            <span>
+            </span> {{/each}} {{each value}}
+                <span>
                 {{$value[4].productName}}
                 ({{$value[4].nums}})
-            </span>
-            {{/each}}
-        </div>
-    </section>
-    <!-- 智能穿戴 end -->
-    <!-- 出行 start -->
-    <section class="trip">
-        <div class="live_h">
-            出行
-        </div>
-        <section class="se1">
-            {{each value}}
-            {{if $value[4].icon}}
-            <div class="live_i">
-                <img src="{{$value[4].icon}}" alt="">
+            </span> {{/each}}
             </div>
-            {{/if}}
-            {{/each}}
         </section>
-        <div class="live_d">
-            {{each value}}
-            <span>
+        <!-- 智能穿戴 end -->
+        <!-- 出行 start -->
+        <section class="trip">
+            <div class="live_h">
+                出行
+            </div>
+            <section class="se1">
+                {{each value}} {{if $value[4].icon}}
+                <div class="live_i">
+                    <img src="{{$value[4].icon}}" alt="">
+                </div>
+                {{/if}} {{/each}}
+            </section>
+            <div class="live_d">
+                {{each value}}
+                <span>
                 {{$value[4].productName}}
                 ({{$value[4].nums}})
-            </span>
-            {{/each}}
-            {{each value}}
-            <span>
+            </span> {{/each}} {{each value}}
+                <span>
                 {{$value[5].productName}}
                 ({{$value[5].nums}})
-            </span>
-            {{/each}}
-        </div>
-    </section>
-    <!-- 出行 end -->
-    <!--运动 start  -->
-    <section class="exercise">
-        <div class="live_h">
-            运动户外
-        </div>
-        <section class="se1">
-            {{each value}}
-            {{if $value[5].icon}}
-            <div class="live_i">
-                <img src="{{$value[5].icon}}" alt="">
+            </span> {{/each}}
             </div>
-            {{/if}}
-            {{/each}}
         </section>
-        <div class="live_d">
-            {{each value}}
-            <span>
+        <!-- 出行 end -->
+        <!--运动 start  -->
+        <section class="exercise">
+            <div class="live_h">
+                运动户外
+            </div>
+            <section class="se1">
+                {{each value}} {{if $value[5].icon}}
+                <div class="live_i">
+                    <img src="{{$value[5].icon}}" alt="">
+                </div>
+                {{/if}} {{/each}}
+            </section>
+            <div class="live_d">
+                {{each value}}
+                <span>
                 {{$value[5].productName}}
                 ({{$value[5].nums}})
-            </span>
-            {{/each}}
-            {{each value}}
-            <span>
+            </span> {{/each}} {{each value}}
+                <span>
                 {{$value[5].productName}}
                 ({{$value[5].nums}})
-            </span>
-            {{/each}}
-        </div>
+            </span> {{/each}}
+            </div>
 
-    </section>
-    <!-- 运动 end -->
-    <!-- 摄影 start -->
-    <section class="photo">
-        <div class="live_h">
-            摄影
-        </div>
-        <section class="se1">
-            {{each value}}
-            <div class="live_i">
-                <img src="{{$value[0].icon}}" alt="">
-            </div>
-            {{/each}}
         </section>
-        <div class="live_d">
-            {{each value}}
-            <span>
+        <!-- 运动 end -->
+        <!-- 摄影 start -->
+        <section class="photo">
+            <div class="live_h">
+                摄影
+            </div>
+            <section class="se1">
+                {{each value}}
+                <div class="live_i">
+                    <img src="{{$value[0].icon}}" alt="">
+                </div>
+                {{/each}}
+            </section>
+            <div class="live_d">
+                {{each value}}
+                <span>
                 {{$value[4].productName}}
                 ({{$value[4].nums}})
-            </span>
-            {{/each}}
-            {{each value}}
-            <span>
+            </span> {{/each}} {{each value}}
+                <span>
                 {{$value[3].productName}}
                 ({{$value[3].nums}})
-            </span>
-            {{/each}}
-        </div>
-    </section>
-    <!-- 摄影 end -->
-    <!-- 手机 start -->
-    <section class="phone">
-        <div class="live_h">
-            手机
-        </div>
-        <section class="se1">
-            {{each value}}
-            {{if $value[1].icon}}
-            <div class="live_i">
-                <img src="{{$value[1].icon}}" alt="">
+            </span> {{/each}}
             </div>
-            {{/if}}
-            {{/each}}
         </section>
-        <div class="live_d">
-            {{each value}}
-            <span>
+        <!-- 摄影 end -->
+        <!-- 手机 start -->
+        <section class="phone">
+            <div class="live_h">
+                手机
+            </div>
+            <section class="se1">
+                {{each value}} {{if $value[1].icon}}
+                <div class="live_i">
+                    <img src="{{$value[1].icon}}" alt="">
+                </div>
+                {{/if}} {{/each}}
+            </section>
+            <div class="live_d">
+                {{each value}}
+                <span>
                 {{$value[2].productName}}
                 ({{$value[2].nums}})
-            </span>
-            {{/each}}
-            {{each value}}
-            <span>
+            </span> {{/each}} {{each value}}
+                <span>
                 {{$value[1].productName}}
                 ({{$value[1].nums}})
-            </span>
-            {{/each}}
-        </div>
-    </section>
-    <!-- 手机 end -->
+            </span> {{/each}}
+            </div>
+        </section>
+        <!-- 手机 end -->
     </script>
     <!--m e 3.1 -->
     <!-- 模板引擎 end -->
@@ -442,7 +398,7 @@
     <script src="../js/jquery.min.js"></script>
     <!-- 引入jquery -->
     <script>
-        $('.find_two ul li').click(function () {
+        $('.find_two ul li').click(function() {
             $(this).addClass('active').siblings().removeClass('active');
             let index = $(this).index();
             $('.find_three .item').eq(index).show().siblings().hide();
