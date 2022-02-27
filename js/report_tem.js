@@ -23,4 +23,4 @@ let r2 = (data) => {
     })
     document.querySelector('.re_u1').innerHTML = count;
 }
-aj('http://192.168.31.110:3000/report/new', r2)
+aj('http://192.168.31.110:3000/useing/master', r2)

@@ -5,89 +5,92 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/bace.css">
-    <link rel="stylesheet" href="../css/public11.css">
-    <link rel="stylesheet" href="../css/guid_.css">
-    <link rel="stylesheet" href="../css/public.css">
-    <link rel="stylesheet" href="../css/up.css">
+    <title>免费试用</title>
+    <link rel="stylesheet" href="./css/bace.css">
+    <link rel="stylesheet" href="./css/public.css">
+    <link rel="stylesheet" href="./css/public11.css">
+    <link rel="stylesheet" href="./css/b.css">
 </head>
 
 <body>
-    <div class="up">
-        <div class="j_left">
-            <p>极果账号登录</p>
-            <input type="text" placeholder="手机号">
-            <input type="password" placeholder="密码">
-            <div class="d_up">
-                <input type="checkbox" />下次自动登录
-                <button>登录</button>
-            </div>
-            <div class="forget">
-                <p>注册新账号</p>
-                <p class="for_p">忘记密码？</p>
-            </div>
-        </div>
-        <div class="j_right">
-            <p>社交网络账号登录</p>
-            <div class="j_img"><img src="./img/img/code.png" alt=""></div>
-            <div>
-                <p>微博</p>
-                <p class="j_q">QQ</p>
-            </div>
-        </div>
-    </div>
+    <!--头部 start -->
     <div class="box">
         <div class="bj">
             <div class="bx clearfix">
-                <div class="loge"><img src="../img/img/logonew.png" alt=""></div>
+                <div class="loge"><img src="./img/img/logonew.png" alt=""></div>
                 <ul class="clearfix clo">
-                    <li><a href="../index.html">首页</a></li>
-                    <li><a href="../play(酷玩)/play.html" target="blank">酷玩</a></li>
-                    <li class="active"><a href="../guid(导航)/guid.html" target="blank">导购</a></li>
-                    <li><a href="../use(试用)/use.html" target="blank">试用</a></li>
-                    <li><a href="../report(报告）/report.html" target="blank">报告</a></li>
+                    <li><a href="./index.html">首页</a></li>
+                    <li><a href="./play(酷玩)/play.html" target="blank">酷玩</a></li>
+                    <li><a href="./guid(导航)/guid.html" target="blank">导购</a></li>
+                    <li><a href="./use(试用)/use.html" target="blank">试用</a></li>
+                    <li class="active"><a href="./report(报告）/report.html" target="blank">报告</a></li>
                 </ul>
                 <div>
                     <span class="btn" target="blank"><a href="https://www.baidu.com/"><i
                                 class="fa fa-search"></i></a></span>
-                    <button class="git_up"><a>登录</a></button>
+                    <button><a href="./up.html" target="blank">登录</a></button>
 
-                    <button><a href="../regist.html" target="blank">注册</a></button>
+                    <button><a href="./regist.html" target="blank">注册</a></button>
                 </div>
             </div>
         </div>
     </div>
-    <h1 class="inve bx">导购清单</h1>
-    <section class="bx">
-        <div class="new_ active"><a href="./guid.html">最热</a></div>
-        <div class="hot_"><a href="./guid2.html">最新</a></div>
-    </section>
-    <article>
-        <!-- 1.引入模板 -->
-        <script src="../js/template-web.js"></script>
-        <!-- 2.准备容器 -->
-        <div class="bx vess">
-            <!-- 3.准备模板 -->
-            <script type="text/html" id="frist">
-                {{each value}}
-                <div>
-                    <div class="img"><img src="{{$value.img}}" alt=""></div>
-                    <p>{{$value.text}}</p>
-                    <div><span><img src="../img/images/zan.png" alt=""></span><span>{{$value.like}}</span><span><img src="../img/images/xin.png" alt=""></span><span>{{$value.words}}</span></div>
-                </div>
-                {{/each}}
-            </script>
+    <!--头部 end -->
+    <section class="con bx">
+        <div class="left">
+            <h1>帮助中心</h1>
+            <ol>
+                商务合作
+                <li>关于极果</li>
+                <li>极果大事记</li>
+                <li>联系我们</li>
+            </ol>
+            <ol>
+                免费试用
+                <li>试用流程</li>
+                <li>如何提高成功率</li>
+            </ol>
         </div>
-    </article>
-    <div class="bx">
-        <div class="load"><span><img src="../img/images/more.png" alt=""></span>点击加载更多</div>
-        <div class="load_1 load"><span><img src="../img/images/loading-icon.gif" alt=""></span>正在加载中</div>
-    </div>
+        <div class="right">
+            <h1>免费试用</h1>
+            <section class="uu">
+                <ul>
+                    试用流程
+                    <li>Step1：报名申请试用</li>
+                    <li> Step2：筛选并公布试用名单</li>
+                    <li>Step3：客服电话或短信通知试用者</li>
+                    <li>Step4：收取押金后寄送产品和试用须知</li>
+                    <li>Step5：用户收货并在朋友圈或微博晒单</li>
+                    <li>Step6：试用并在规定时间上传体验报告</li>
+                    <li>Step7：审核报告并确认产品是否回收</li>
+                    <li>Step8：返还试用机，收货后退还押金</li>
+                </ul>
+                <ul>
+                    试用注意事项
+                    <li> 1. 收到试用通知，2天不回复算弃权</li>
+                    <li> 2. 拒缴押金则取消试用资格</li>
+                    <li>3. 试用机被人为损坏须赔偿 Beijing Mini Maker Faire，让更多的普通消费者通过丰富的线下活动来亲身体验新硬件给生活带来的全新改变；</li>
+                    <li> 4. 严重拖延报告将影响后续活动资格</li>
+                    <li>5. 30天内不得凭借拉票重复中签试用，以当月首次为准，不得调换，遇有重复则资格顺延。</li>
+                    <li> 6. 客服妹妹QQ： 3287633427</li>
+                </ul>
+                <ul>
+                    如何提高申请成功率
+                    <li> 1. 完善个人主页，展现专业性（请在手机端页面完善：m.jiguo.com）</li>
+                    <li> 2. 试用计划明确且有新意</li>
+                    <li>3. 在社交网络或圈子里有大影响力</li>
+                    <li> 4. 使劲拉票，但禁止恶意刷票</li>
+                    <li> 5. 认真参与并转发极果的活动</li>
+                    <li> BTW：极果不是福利社，给基友、男友、女友送礼物，献爱心以及完成小时候心愿神马的一概不会通过哦～</li>
+                </ul>
+            </section>
+        </div>
+    </section>
+    <!--b 底部样式 start -->
     <section id="foot">
         <section class="footer bx">
             <div class="footer_left">
-                <img src="../img/img/code.png" alt="">
+                <img src="./img/img/code.png" alt="">
             </div>
             <div class="footer_centre">
                 <img src="./img/img/logoImg.jpg" alt="">
@@ -96,12 +99,12 @@
             </div>
             <div class="footer_right">
                 <dl>
-                    <dt><a href="../b2.html" target="black">免费试用</a></dt>
+                    <dt><a href="./b2.html" target="black">免费试用</a></dt>
                     <dd><a href="#">试用流程</a></dd>
                     <dd><a href="#">如何提高成功率</a></dd>
                 </dl>
                 <dl>
-                    <dt><a href="../b1.html" target="black">友情链接</a></dt>
+                    <dt><a href="./b1.html" target="black">友情链接</a></dt>
                     <dd>
                         <span>
                             <a href="#">智东西</a>
@@ -167,7 +170,7 @@
                 </dl>
                 <dl>
                     <dt>
-                        <a href="./guid3.html" target="black">购买攻略</a>
+                        <a href="../use_ful/guid(导航)/guid3.html" target="black">购买攻略</a>
                     </dt>
                     <dd>
                         <a href="#">美亚海淘教程</a>
@@ -216,7 +219,5 @@
     </section>
     <!--b 底部样式 end -->
 </body>
-<script src="../js/guid_.js"></script>
-<script src="../js/up_.js"></script>
 
 </html>
