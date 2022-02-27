@@ -201,4 +201,45 @@
     }
 }
 /* 动画 */
-
+@keyframes go {
+    10% {
+        transform: translateY(-600px);
+        opacity: 0;
+    }
+    15% {
+        transform: translateY(-500px);
+        opacity: 0.2;
+    }
+    20% {
+        transform: translateY(-400px);
+        opacity: 0.4;
+    }
+    30% {
+        transform: translateY(-300px);
+        opacity: 0.5;
+    }
+    60% {
+        transform: translateY(-200px);
+        opacity: 0.6;
+    }
+    70% {
+        transform: translateY(-100px);
+        opacity: 0.8;
+    }
+    90% {
+        transform: translateY(-50px);
+        opacity: 0.9;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+.banner {
+    .banner_bx {
+        .right {
+            animation: go 4s;
+            animation-iteration-count: 2;
+        }
+    }
+}
